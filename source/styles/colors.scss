@@ -1,0 +1,80 @@
+/* no sense variables */
+$transparent: transparent;
+
+$white: #fff;
+
+$orange: #E8C300;
+
+$ultra-black: #000;
+$black: #333333;
+$nearly-black: #393E46;
+
+$gray-lightest: rgba(255, 255, 255, 0.2);
+$gray-light: rgba(51, 51, 51, 0.5);
+$gray: rgba(255, 255, 255, 0.5);
+$gray-without-opacity: #E5E5E5;
+$gray-darker: #d3d3d3;
+
+
+$shadow-gradient: (0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+/* variables with sense */
+/* *********************************************************************** */
+
+$header-after--BGColor: $orange;
+$header__text_color_white--color: $white;
+
+$link--BGColor: $orange;
+$link--color: $white;
+$link_transparent--BGColor: transparent;
+$link_transparent--borderColor: $gray;
+
+$social--borderColor: $gray-lightest;
+$social-hover--borderColor: $orange;
+$social__ico--fill: $white;
+$social__ico-hover--fill: $orange;
+
+$navigation__item--color: $white;
+$navigaiont__content-md--BGColor: $black;
+$navibation__sandwich-ico--BGColor: $orange;
+$navibation__sandwich-ico-after-before--BGColor: $navibation__sandwich-ico--BGColor;
+$navigation-before-after--BGColor: $gray-lightest;
+$navigation_desktop-theme_dark--BGColor: $black;
+
+$downward--BGColor: $white;
+$downward-after--color: $black;
+
+$main-screen--BGImageGradient: $shadow-gradient;
+$main-screen-before-after--BGColor: $gray-lightest;
+$main-screen__downward-container--borderColor: $gray-lightest;
+$main-screen__downward-container-before-after--BGColor: $gray-lightest;
+$main-screen__annotation--color: $white;
+
+$content-screen_with-lines-before-after--BGColor: $gray-lightest;
+$content-screen_with-lines__content-box-before--BGColor: $gray-lightest;
+$content-screen__image-after--borderColor: $orange;
+$content-screen__banner--Color: $white;
+$content-screen_theme_our-team--BGImageGradient: $shadow-gradient;
+$content-screen_theme_specialties--BGImageGradient: $shadow-gradient;
+$content-screen_theme_private-events--BGImageGradient: $shadow-gradient;
+$content-screen_theme_dark__content-box--Color: $white;
+$content-screen__image-description-text--color: $white;
+$content-screen__image-description-container--BGColor: $ultra-black;
+$content-screen__annotation--color: $white;
+
+$sendingForm__inputField--BGColor:$gray-without-opacity;
+$sendingForm__inputField--color: $gray-light;
+$sendingForm__textArea--color: $sendingForm__inputField--color;
+$sendingForm__textArea--BGColor: $sendingForm__inputField--BGColor;
+
+$carousel__dots--BGColor: $gray;
+$carousel__dots-active--BGColor: $white;
+
+$menu__listItem--color: $black;
+$menu__listItemDot--BGColor: $black;
+$menu__listItemDescription--color: $gray-darker;
+
+$contact__text--color: $gray-light;
+
+$footer--BGColor: $ultra-black;
+$footer__annotation--color: $gray-darker;
+$footer__annotation_highlighted--color: $gray-darker;

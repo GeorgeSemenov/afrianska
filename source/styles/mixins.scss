@@ -1,0 +1,94 @@
+@mixin unselectable {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+@mixin rounded($r: 50%){
+    -moz-border-radius: $r;
+    -webkit-border-radius: $r;
+    border-radius: $r;
+}
+
+@mixin transition($n: .5, $m: .1, $function: ease-out){
+    //Первое число отвечает за длительность анимации, второе за время, которое потребуется для срабатывания анимации ( в данном случае если убрать курсор с круга, анимация сработает чере одну десятую секунды), к тому же этот транзишон отвечает за анимацию перехода от состояния hover к обычному состоянию
+    $s:0s;
+
+    -moz-transition: ($s + $n) $function ($s + $m);
+    -webkit-transition: ($s + $n) $function ($s + $m);
+    -o-transition: ($s + $n) $function ($s + $m);
+    transition: ($s + $n) $function ($s + $m);//$s+$n - такая запись нужна, чтобы преобразовать просто число , в данном случае 0.5 в 0.5s . т.к. для transition нужны именно секунды. К несчастью запись $n : $s + $n - воспринимается  как рекурсивное переопределение переменной, поэтому приходиться не переопределять переменную.
+}
+
+@mixin square($side: 25px){
+    width: $side;
+    height: $side;
+}
+@mixin centeredX($transLeft: -50%, $left: 50%){
+    left: $left;
+    transform: translateX($transLeft);
+}
+@mixin centeredY($transTop: -50%, $top: 50%){
+    top: $top;
+    transform: translateY($transTop);
+}
+@mixin centered( $transLeft: -50% , $transTop: -50%, $top: 50%, $left: 50%){
+    top: $top;
+    left: $left;
+    transform: translate( $transLeft , $transTop);
+}
+@mixin my($value){
+	margin-top: $value;
+	margin-bottom: $value;
+}
+@mixin mx($value){
+	margin-left: $value;
+	margin-right: $value;
+}
+@mixin py($value){
+	padding-top: $value;
+	padding-bottom: $value;
+}
+@mixin px($value){
+	padding-left: $value;
+	padding-right: $value;
+}
+@mixin placeholderColor($color){
+    &::-moz-placeholder { color: $color;}
+    &::-webkit-input-placeholder { color: $color; }
+    &:-ms-input-placeholder { color: $color; }
+    &::-ms-input-placeholder { color: $color; }
+    &::placeholder { color: $color; }
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: red;
+      opacity: 1; /* Firefox */
+    }
+
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: red;
+    }
+
+    ::-ms-input-placeholder { /* Microsoft Edge */
+      color: red;
+    }
+}
+@mixin buttonBehave($bgColor:red){
+  &:hover{opacity: 0.75;}
+  &:active{background-color: darken($bgColor,10%);}
+}
+@mixin buttonFullBehave($bgColor:red, $color: grey){
+  &:hover{opacity: 0.75;}
+  &:active{
+    background-color: darken($bgColor,10%);
+    color: darken($color,30%);
+  }
+}
+
+
+/* --------------------------------------------- */
+
+/* ############################################# */
+
+/* --------------------------------------------- */
+

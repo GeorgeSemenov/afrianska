@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'open-sans';
+  font-style: bold;
+  src:  local('☺'),
+        url('../../fonts/open-sans/open-sans-bold.woff2') format('woff2'),
+        url('../../fonts/open-sans/open-sans-bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'open-sans';
+  font-style: normal;
+  src:  local('☺'),
+        url('../../fonts/open-sans/open-sans.woff2') format('woff2'),
+        url('../../fonts/open-sans/open-sans.woff') format('woff');
+}

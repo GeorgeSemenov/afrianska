@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "stylelint-config-prettier"
+  ],
+  "plugins": [
+    "stylelint-media-use-custom-media",
+    "stylelint-scss",
+    "stylelint-declaration-use-variable"
+  ],
+  "rules": {
+    "declaration-no-important": true,
+    "block-no-empty": true,
+    "declaration-block-no-duplicate-properties": true,
+    "no-duplicate-at-import-rules" : true,
+    "sh-waqar/declaration-use-variable": [["/color/"]]
+  }
+}
