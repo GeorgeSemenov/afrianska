@@ -1,0 +1,6 @@
+.header__sandwich-ico-container {
+  @include square(35px);
+  position: absolute;
+  right: 10px;
+  display: block;
+}

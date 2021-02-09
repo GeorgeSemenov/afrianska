@@ -1,0 +1,43 @@
+.header__sandwich-ico {background: $navibation__sandwich-ico--BGColor;/*Задаём цвет средней линии сэндвича*/
+    display: block;/*нужно чтобы задать ширину и высоту средней линии сэндвича*/
+    height: 4px;/*высота этой линии*/
+    position: absolute;/*нужно чтобы задать абсолютное позиционирование верхней и нижней полоске сэндвича*/
+    z-index: 2;
+    top: 15px;
+    left: 0;
+    transition: background .2s ease-out;/*скорость исчезновения средней линии*/
+    width: 36px;
+
+    .header__sandwich-input:checked ~ .header__sandwich-ico-container &{
+      background: transparent;/*в открытом состоянии средняя линия бутерброда будет иметь прозрачный цвет*/
+    }
+
+    &:before,
+    &:after {
+      background: $navibation__sandwich-ico-after-before--BGColor;/*цвет этих линий*/
+      content: '';
+      display: block;/*чтобы задать им ширину и высоту*/
+      width: 100%;/*ширина будет такой же как и у средней линии*/
+      height: 100%;/*высота будет такой же как и у средней линии*/
+      position: absolute;/*для позиционирования*/
+      transition: all .2s ease-out;/*скорость анимации*/
+    }
+
+    &:before {/*первая линия бутерброда*/
+      top: 10px;/*перва линия будет выше средней*/
+    }
+
+    &:after {/*третья линия бутерброда*/
+      top: -10px;/*третья линия будет ниже*/
+    }
+    .header__sandwich-input:checked ~ .header__sandwich-ico-container &:before,
+    .header__sandwich-input:checked ~ .header__sandwich-ico-container &:after {
+      top: 0px;/*задаём верхней и нижней линиям бутерброда высоту равной средней линии бутерброда, так крест будет находится ровно посередине*/
+    }
+    .header__sandwich-input:checked ~ .header__sandwich-ico-container &:before {
+      transform: rotate(-45deg);/*при открывании бутерброда нижняя линия повернётся на 45 градусов против часовой стрелки*/
+    }
+
+    .header__sandwich-input:checked ~ .header__sandwich-ico-container &:after {
+      transform: rotate(45deg);/*при открывании бутерброда верхняя линия повернётся на 45 градусов по часовой стрелке*/
+    }}

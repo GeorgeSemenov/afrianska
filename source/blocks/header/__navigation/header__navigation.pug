@@ -1,0 +1,6 @@
+mixin header__navigation(modifier)
+  ul.header__navigation&attributes(attributes)
+    if modifier.navigationAr == undefined
+        - modifier.navigationAr = "navigationAr is empty";
+    each item in modifier.navigationAr
+      +header__item(item)
