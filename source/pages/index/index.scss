@@ -1,6 +1,10 @@
-/* Блоки */
-@import "../../styles/allBlocksStyles";
+/* общие стили */
+@import "../../styles/allCommonStyles";
 
-body{
-  /*тут так и должно быть, пусто*/
-}
+/* Стили блоков */
+@import '../../blocks/header/header';
+@import '../../blocks/article/article';
+@import '../../blocks/logo/logo';
+@import '../../blocks/header/header';
+@import '../../blocks/article/article';
+@import '../../blocks/logo/logo';

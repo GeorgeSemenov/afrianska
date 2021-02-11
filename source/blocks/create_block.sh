@@ -62,6 +62,3 @@ end4
 end
 # Записываем только что созданный scss файл блока в список всех стилей 
 cd ../../styles
-cat >>allBlocksStyles.scss << end
-@import '../blocks/${fileName}/${fileName}';
-end

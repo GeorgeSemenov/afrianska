@@ -8,7 +8,7 @@ module.exports = function(paths){//pathc - необходим, т.к. sass-loade
 					use: [//тут указываем сами лоадеры, к которым относятся эти настройки
 						//Напомню - к файлам, которые подходят под regexp писаным в test: будут применены лоадеры начиная назшим и заканчивая высшим , или с права на лево.
 						{//добавляет css стили в DOM дерево при помощи тега style и при этом ещё подгружает sourcemap
-							loader: 'style-loader',
+							loader: MiniCssExtractPlugin.loader,
 							options:{
 								sourceMap: true,
 							}

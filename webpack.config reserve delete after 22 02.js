@@ -12,11 +12,10 @@ const pug = require ('./webpack/pug');//Подключаем модуль с pug
 const devserver = require('./webpack/devserver');
 const sass = require('./webpack/sass');//Напомню, что сами стили(допустим blog.scss) нужно подключать через соответствеющие js файлы (blog.js)
 const css = require('./webpack/css');//Модуль для обработки файлов .css напомню что такие файлы нужно подключать особо в каждый соответствующий js файлы (к примеру для index.html нужно подключать в index.js)
-const extractCss = require('./webpack/css.extract');//этот модуль далее в программе не используется, можно удалить Модуль для извлечения стилей в отдельный(ые) файл(ы) и дальнейшего подключения к проекту
+const extractCss = require('./webpack/css.extract');//Модуль для извлечения стилей в отдельный(ые) файл(ы) и дальнейшего подключения к проекту
 const images = require('./webpack/images');//Модуль, который обрабатывает изображения
 const fonts = require('./webpack/fonts');
-const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin"); // Внимание, этот плагин работает только с mini-css-extract-plugin требует наличие mini-css-extract-plugin убирает дублирующиеся importы в scss например в блоке А и в блоке Б есть импорт блока Г, если на страницу подключить блок А и Б то импортируется на страницу только один раз блок Г discards duplicate selectors in the bundled style sheets from mini-css-extract-plugin
-const MiniCssExtractPlugin = require("mini-css-extract-plugin"); // чтобы вытащить scss и css код в отдельный фойл а не в style-loader
+const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin"); // требует наличие mini-css-extract-plugin убирает дублирующиеся importы в scss например в блоке А и в блоке Б есть импорт блока Г, если на страницу подключить блок А и Б то импортируется на страницу только один раз блок Г discards duplicate selectors in the bundled style sheets from mini-css-extract-plugin
 
 const PATHS = {//Объект с двумя свойствами
 	source: path.join(__dirname, 'source'),
@@ -54,7 +53,6 @@ const common= merge([//модуль merge -  заменяет метод assign 
 				chunks: ['index', 'common'],//Добавляет на страницу только те файлы, которые начинаются с index (допустим index.js index.css даже несмотря на то что они находятся в отельных папках css/ и js/)
 				template: PATHS.source + '/pages/index/index.pug'//в данный плагин мы передадим шаблон разметки pug но сразу же скомпилированную (pug-loader'oм), проще говоря плагин сверстает страницу изходя из разметки, которую ему предоставит pug плагин (см он подключени ниже) после обработки этого шаблона
 			}),
-			new MiniCssExtractPlugin(), // Видимо без этого мы не сможем использовать loader, который будем использовать в для обработки scss файлов
 			new OptimizeCssAssetsPlugin(),//Для оптимизации css и удаленя дублей стилей (если дважды импортируешь файл)
 			new webpack.ProvidePlugin({//Этот плагин позволяет отказаться от import в модулях с кодом, т.е. когда webpack будет смотреть в код и найдёт допустим $ он автоматически подключит jquery, в соотвествии с настройками которые ты установишь в этом модуле
 				$: 'jquery',//Если будет найден $ он автоматически подключит jquery, jquery должен быть установленн npm i jquery т.е. можно не писать в коде import jquery
