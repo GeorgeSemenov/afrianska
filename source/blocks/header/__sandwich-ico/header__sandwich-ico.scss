@@ -1,12 +1,12 @@
-.header__sandwich-ico {background: $navibation__sandwich-ico--BGColor;/*Задаём цвет средней линии сэндвича*/
+.header__sandwich-ico {
+    background: $header__sandwich-ico--BGColor;/*Задаём цвет средней линии сэндвича*/
     display: block;/*нужно чтобы задать ширину и высоту средней линии сэндвича*/
-    height: 4px;/*высота этой линии*/
+    height: 3px;/*высота этой линии*/
     position: absolute;/*нужно чтобы задать абсолютное позиционирование верхней и нижней полоске сэндвича*/
     z-index: 2;
-    top: 15px;
     left: 0;
     transition: background .2s ease-out;/*скорость исчезновения средней линии*/
-    width: 36px;
+    width: 24px;
 
     .header__sandwich-input:checked ~ .header__sandwich-ico-container &{
       background: transparent;/*в открытом состоянии средняя линия бутерброда будет иметь прозрачный цвет*/
@@ -14,7 +14,7 @@
 
     &:before,
     &:after {
-      background: $navibation__sandwich-ico-after-before--BGColor;/*цвет этих линий*/
+      background: $header__sandwich-ico-after-before--BGColor;/*цвет этих линий*/
       content: '';
       display: block;/*чтобы задать им ширину и высоту*/
       width: 100%;/*ширина будет такой же как и у средней линии*/
@@ -24,11 +24,11 @@
     }
 
     &:before {/*первая линия бутерброда*/
-      top: 10px;/*перва линия будет выше средней*/
+      top: 7px;/*перва линия будет выше средней*/
     }
 
     &:after {/*третья линия бутерброда*/
-      top: -10px;/*третья линия будет ниже*/
+      top: -7px;/*третья линия будет ниже*/
     }
     .header__sandwich-input:checked ~ .header__sandwich-ico-container &:before,
     .header__sandwich-input:checked ~ .header__sandwich-ico-container &:after {

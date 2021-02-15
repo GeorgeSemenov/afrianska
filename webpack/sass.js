@@ -1,3 +1,4 @@
+const MiniCssExtractPlugin = require("mini-css-extract-plugin"); // чтобы вытащить scss и css код в отдельный фойл а не в style-loader
 module.exports = function(paths){//pathc - необходим, т.к. sass-loader скомпилирует новые файлы.css из файлов.scss и чтобы с ними нужно дальше работать нужно запомнить новые пути, они и будут записанны в paths, который в последствии передастся в include
 	return {
 		module: {//по умолчанию webpack может работать только с JS и JSON, чтобы он работал с другими сущностями, такими как scss ему нужны модули 
@@ -7,7 +8,7 @@ module.exports = function(paths){//pathc - необходим, т.к. sass-loade
 					//include: paths, //ключ include принимает значение - массив путей или файловгде импортированные файлы будут трансформированны лоадером
 					use: [//тут указываем сами лоадеры, к которым относятся эти настройки
 						//Напомню - к файлам, которые подходят под regexp писаным в test: будут применены лоадеры начиная назшим и заканчивая высшим , или с права на лево.
-						{//добавляет css стили в DOM дерево при помощи тега style и при этом ещё подгружает sourcemap
+						{//извлекает css код в файлы
 							loader: MiniCssExtractPlugin.loader,
 							options:{
 								sourceMap: true,

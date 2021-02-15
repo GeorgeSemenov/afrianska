@@ -1,7 +1,20 @@
+@import '__content/header__content';
 @import '__item/header__item';
 @import '__navigation/header__navigation';
 @import '__sandwich-input/header__sandwich-input';
 @import '__sandwich-ico-container/header__sandwich-ico-container';
 @import '__sandwich-ico/header__sandwich-ico';
 @import '__logo/header__logo';
-.header {}
+.header {
+  display: flex;
+  align-items: flex-end;
+  padding-top: 48px;
+  padding-left: 83px;
+  padding-right: 86px;
+
+  @media (max-width: $md - 1px){
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

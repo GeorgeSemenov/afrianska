@@ -10,13 +10,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');//Данный плаг
 const merge = require('webpack-merge');//Этот модуль нужен чтобы в webpack.config.js склеивать различные модули, вместо object.assign - теперь кажыдй модуль можно записать в другой файл (как pug.js) и подключить к webpack.config.js
 const pug = require ('./webpack/pug');//Подключаем модуль с pug для webpack.config.js ,кстати можно не указывать .js webpack и так всё понимает
 const devserver = require('./webpack/devserver');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin"); // чтобы вытащить scss и css код в отдельный фойл а не в style-loader
 const sass = require('./webpack/sass');//Напомню, что сами стили(допустим blog.scss) нужно подключать через соответствеющие js файлы (blog.js)
 const css = require('./webpack/css');//Модуль для обработки файлов .css напомню что такие файлы нужно подключать особо в каждый соответствующий js файлы (к примеру для index.html нужно подключать в index.js)
 const extractCss = require('./webpack/css.extract');//этот модуль далее в программе не используется, можно удалить Модуль для извлечения стилей в отдельный(ые) файл(ы) и дальнейшего подключения к проекту
 const images = require('./webpack/images');//Модуль, который обрабатывает изображения
 const fonts = require('./webpack/fonts');
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin"); // Внимание, этот плагин работает только с mini-css-extract-plugin требует наличие mini-css-extract-plugin убирает дублирующиеся importы в scss например в блоке А и в блоке Б есть импорт блока Г, если на страницу подключить блок А и Б то импортируется на страницу только один раз блок Г discards duplicate selectors in the bundled style sheets from mini-css-extract-plugin
-const MiniCssExtractPlugin = require("mini-css-extract-plugin"); // чтобы вытащить scss и css код в отдельный фойл а не в style-loader
 
 const PATHS = {//Объект с двумя свойствами
 	source: path.join(__dirname, 'source'),
@@ -73,16 +73,6 @@ const common= merge([//модуль merge -  заменяет метод assign 
 	images(),
 	fonts()
 ]);
-
-const developmentConfig ={
-	devServer: {//Можно легко изменить порт, по которому будет находиться сайт и куча других настроек в пункте dev-server
-		contentBase:'./build',//Указываем директорию, откуда будет строиться сайт на локальном сервере(по умолчанию сразу по адрессу localhost:8080 будет выводиться index.html), если в этой папке будет, например, blog.html , то эта страница будет доступна по https://localhost/blog.html
-		hot: true, //Это указание на то что мы используем горячую замену модулей Hot Module Replacement
-		stats: 'errors-only',//Теперь в косноли будут вылезать только ошибки
-		port: 9000,//теперича сайт будет открываться на 9000 порту
-		watchContentBase: true
-	}
-};
 
 module.exports = function(env){/*webpackу требуется экспортируемый объект из данной конфигурации, поэтому можешь считать что данная строка является точкой входа, можешь читать код начиная отсюда*/
 	//Напомню что env или mode:production автоматически минифицирует код.

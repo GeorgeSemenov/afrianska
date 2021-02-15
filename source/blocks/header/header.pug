@@ -1,3 +1,4 @@
+include __content/header__content.pug
 include __item/header__item.pug
 include __navigation/header__navigation.pug
 include __sandwich-input/header__sandwich-input.pug
@@ -12,5 +13,5 @@ mixin header(modifier)
        когда назимают на ico-conainer нажимается и __sandwich-input
        и добавляются новые стили прописанные в __navigation
     +header__sandwich-input(modifier)
-    +header__sandwich-ico-container(modifier)
     +header__navigation(modifier)
+    +header__sandwich-ico-container(modifier)
