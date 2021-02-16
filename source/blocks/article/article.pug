@@ -1,2 +1,6 @@
+include __text/article__text.pug
+include __header/article__header.pug
 mixin article(modifier)
   .article&attributes(attributes)
+    +article__header(modifier)
+    +article__text(modifier)

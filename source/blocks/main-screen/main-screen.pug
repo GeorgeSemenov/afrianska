@@ -1,0 +1,5 @@
+include __topic-wrapper/main-screen__topic-wrapper.pug
+include ../article/article.pug
+mixin main-screen(modifier)
+  .main-screen&attributes(attributes)
+    +main-screen__topic-wrapper(modifier)

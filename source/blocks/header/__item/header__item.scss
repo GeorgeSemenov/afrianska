@@ -2,4 +2,11 @@
   font-family: 'gilroy' ,times , serif;
   font-size: 3rem;
   color: $header__item;
+
+  @media (max-width: $md - 1px){
+    margin-bottom: 10px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
 }

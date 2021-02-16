@@ -1,4 +1,5 @@
 include ../../blocks/header/header.pug
+include ../../blocks/main-screen/main-screen.pug
 doctype html
 html(lang="ru")
   head
@@ -8,4 +9,10 @@ html(lang="ru")
   body
     +header({
       navigationAr: ['home', 'blog', 'contact us']
+    })
+    +main-screen({
+      article:{
+        header:"New Automation Tool for Your Home",
+        text:"Lorem iposum dolor sit amet, consectetur adipiscing elit. Faucibus tristique vulputate ultrices ut mauris tellus at. Posuere sollicitudin adio tellus elit."
+      }
     })

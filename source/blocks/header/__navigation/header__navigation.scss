@@ -1,20 +1,26 @@
 .header__navigation {
+  transition: width 0.5s ease-out;
   display: flex;
   flex-grow: 1;
   justify-content: space-evenly;
   position: relative;
-
+  left: 100%;
   @media (max-width: $md - 1px){
-    transition: width 0.5s ease-out;
-    width: 0;
-    overflow-y: scroll;
-    display: block;
-    min-height: 100vh;
-
-    .header__sandwich-input:checked ~ &{
-      transition: width 0.5s ease-out;
-      transform: translatex(0);
-      width: 100vw;
-    }
+    left: 0;
+    top: 0;
+    opacity: 0;
   }
 }
+
+.header__sandwich-input:checked ~ .header__content .header__navigation{
+    left: 0%;
+
+    @media (max-width: $md - 1px){
+      position: absolute;
+      top: 45px;
+      opacity: 1;
+      width: 100vw;
+      text-align: center;
+      flex-direction: column;
+    }
+  }
