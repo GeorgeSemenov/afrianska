@@ -1,1 +1,10 @@
-.main-screen__topic-wrapper {}
+.main-screen__topic-wrapper {
+  width: 39%;
+  padding-left: 15.6%;
+  padding-top: 7.3%;
+
+  @media (max-width: $md - 1px){
+    width: 80%;
+    text-align: center;
+  }
+}

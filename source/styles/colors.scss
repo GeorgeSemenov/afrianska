@@ -1,4 +1,5 @@
 /* no sense variables */
+$dark-faded: rgba(53, 110, 173, 0.2);
 $transparent: transparent;
 
 $blue: #356EAD;
@@ -10,3 +11,5 @@ $dark-blue: #316099;
 $header__sandwich-ico--BGColor: $blue;
 $header__sandwich-ico-after-before--BGColor: $header__sandwich-ico--BGColor;
 $header__item: $dark-blue;
+
+$link__text--boxShadow: $dark-faded;

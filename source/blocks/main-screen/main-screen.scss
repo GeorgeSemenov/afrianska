@@ -1,3 +1,15 @@
+@import '__content-wrapper/main-screen__content-wrapper';
+@import '__article/main-screen__article';
+@import '__link/main-screen__link';
 @import '__topic-wrapper/main-screen__topic-wrapper';
 @import '../article/article';
-.main-screen {}
+@import '../link/link';
+.main-screen {
+  background: linear-gradient(0deg, rgba(152, 195, 232, 0.2) 8.84%, rgba(152, 195, 232, 0.04) 31.12%);
+  height: 685px;
+
+  @media (max-width: $lg - 1px){
+    padding-bottom: 15%;
+    height: auto;
+  }
+}

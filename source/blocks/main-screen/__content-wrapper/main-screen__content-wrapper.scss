@@ -1,0 +1,9 @@
+.main-screen__content-wrapper {
+  background: url(../../img/main-screen-back.png) ;
+  background-repeat: no-repeat;
+  background-position: 97% 40%;
+  height: 100%;
+  @media (max-width: $lg - 1px){
+    background-size: 50%;
+  }
+}

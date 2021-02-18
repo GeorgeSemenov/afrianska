@@ -15,4 +15,10 @@
 
 html{
   font-size: 10px;
+  @media (max-width: $lg - 1px){
+    font-size: 7px;
+  }
+  @media (max-width: $sm - 1px){
+    font-size: 7px;
+  }
 }

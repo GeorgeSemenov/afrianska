@@ -1,5 +1,7 @@
+include __content-wrapper/main-screen__content-wrapper.pug
 include __topic-wrapper/main-screen__topic-wrapper.pug
 include ../article/article.pug
+include ../link/link.pug
 mixin main-screen(modifier)
   .main-screen&attributes(attributes)
-    +main-screen__topic-wrapper(modifier)
+    +main-screen__content-wrapper(modifier)
