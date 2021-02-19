@@ -1,15 +1,22 @@
 /* no sense variables */
 $dark-faded: rgba(53, 110, 173, 0.2);
+$white: #fff;
 $transparent: transparent;
 
 $blue: #356EAD;
-$dark-blue: #316099;
+$blue-dark: #5A98D0;
+$blue-darker: #316099;//rgba(49, 96, 153, 1)
 
 /* variables with sense */
 /* *********************************************************************** */
 
+$article_theme_topic__header--color: $blue-darker;
+
 $header__sandwich-ico--BGColor: $blue;
 $header__sandwich-ico-after-before--BGColor: $header__sandwich-ico--BGColor;
-$header__item: $dark-blue;
+$header__item: $blue-darker;
 
+$link--color: $white;
+$link--background-color: $blue-dark;
 $link__text--boxShadow: $dark-faded;
+

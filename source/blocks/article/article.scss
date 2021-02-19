@@ -1,5 +1,10 @@
+@import '_theme_topic/article_theme_topic';
 @import '__text/article__text';
 @import '__header/article__header';
 .article {
   font-family: 'galien' ,times , serif;
+
+  &.article_theme_topic{
+    font-family: 'gilroy' ,times , serif;
+  }
 }

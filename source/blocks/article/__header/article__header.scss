@@ -2,3 +2,12 @@
   font-size: 7rem;
   margin-bottom: 50px;
 }
+
+.article_theme_topic {
+  .article__header {
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 45px;
+    color: $article_theme_topic__header--color;
+  }
+}

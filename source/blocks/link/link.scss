@@ -1,11 +1,22 @@
 @import '__text/link__text';
 .link {
-  box-shadow: 5px 10px 20px $link__text--boxShadow;
-  background: #5A98D0;
-  border-radius: 10px;
   @include px(5px);
   @include py(20px);
+  @include unselectable();
+  box-shadow: 5px 10px 20px $link__text--boxShadow;
+  background: $link--background-color;
+  border-radius: 10px;
   text-align: center;
   box-sizing: border-box;
   cursor: pointer;
+  color: $link--color;
+
+  &:hover{
+    background-color: darken($link--background-color,15%);
+    color: darken($link--color,15%);
+  }
+  &:active{
+    background-color: darken($link--background-color,30%);
+    color: darken($link--color,30%);
+  }
 }

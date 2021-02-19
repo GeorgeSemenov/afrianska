@@ -3,4 +3,5 @@ include __header/article__header.pug
 mixin article(modifier)
   .article&attributes(attributes)
     +article__header(modifier)
-    +article__text(modifier)
+    if (attributes.class.indexOf('article_theme_topic')==-1)
+      +article__text(modifier)

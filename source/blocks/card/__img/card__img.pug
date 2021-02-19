@@ -1,0 +1,6 @@
+mixin card__img(modifier)
+  picture.card__img&attributes(attributes)
+    case.modifier.imgName 
+      when 'multifunction'
+        img(src=require('../../img/multifunction.png') alt="multifunction")
+        

@@ -1,0 +1,7 @@
+@import '__container/cards-screen__container';
+@import '__article/cards-screen__article';
+@import '../article/article';
+@import '../card/card';
+.cards-screen {
+  position: relative;
+}
