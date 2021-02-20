@@ -1,7 +1,7 @@
 <snippet>
   <content><![CDATA[
-img(src=require('../../img/${1:picName}.${2:png}') alt="${3:altName}")
-${4:altName}
+img(src=require('../../img/${1:picName}.${2:png}') alt="${3:${1:picName}}")
+${4:}
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>img</tabTrigger>

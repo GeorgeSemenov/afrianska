@@ -4,6 +4,7 @@
   padding-top: 7.3%;
 
   @media (max-width: $md - 1px){
+    @include px(0);
     width: 80%;
     text-align: center;
   }

@@ -5,3 +5,16 @@
   width: 81%;
   line-height: 23px;
 }
+.article_font_middle {
+  .article__text{
+    font-weight: 400;
+    font-size: 1.8rem;
+    width: 100%;
+    line-height: 26px;
+  }
+}
+.article_text_faded {
+  .article__text{
+    opacity: 0.6;
+  }
+}

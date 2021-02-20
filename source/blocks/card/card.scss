@@ -1,4 +1,24 @@
+@import '__learn-arrow/card__learn-arrow';
+@import '__learn-text/card__learn-text';
+@import '__img-container/card__img-container';
 @import '__next-block/card__next-block';
 @import '__article/card__article';
 @import '__img/card__img';
-.card {}
+@import '../article/article';
+$card-width: 380px;//От этого показателя будет зависить padding-X
+$card-width-mobile: 100% ;
+.card {
+  @include px($card-width*0.12);
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: $card--background-color;
+  box-shadow: 5px 20px 50px $card--shadow-color;
+  border-radius: 10px;
+
+  @media (max-width: $sm - 1px){
+    @include px(10px);
+    width: $card-width-mobile;
+  }
+}

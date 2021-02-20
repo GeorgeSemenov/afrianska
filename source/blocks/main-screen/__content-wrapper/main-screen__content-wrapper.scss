@@ -6,4 +6,8 @@
   @media (max-width: $lg - 1px){
     background-size: 50%;
   }
+  @media (max-width: $md - 1px){
+    display: flex;
+    justify-content: space-around;
+  }
 }

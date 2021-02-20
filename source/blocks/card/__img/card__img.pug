@@ -1,6 +1,10 @@
 mixin card__img(modifier)
   picture.card__img&attributes(attributes)
-    case.modifier.imgName 
+    case modifier.imgName 
       when 'multifunction'
         img(src=require('../../img/multifunction.png') alt="multifunction")
+      when 'newspaper'
+        img(src=require('../../img/newspaper.png') alt="newspaper")
+      when 'lady'
+        img(src=require('../../img/lady.png') alt="lady")
         

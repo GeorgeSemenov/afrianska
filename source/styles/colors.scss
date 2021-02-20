@@ -1,16 +1,20 @@
 /* no sense variables */
 $dark-faded: rgba(53, 110, 173, 0.2);
 $white: #fff;
+$gray: rgba(16, 112, 177, 0.2);
 $transparent: transparent;
 
-$blue: #356EAD;
-$blue-dark: #5A98D0;
+
+$blue-light: #1f3f68;//rgba(31, 63, 104, 1)
+$blue: #356EAD;//rgba(53, 110, 173, 1)
+$blue-dark: #5A98D0;//rgba(90, 152, 208, 1)
 $blue-darker: #316099;//rgba(49, 96, 153, 1)
 
 /* variables with sense */
 /* *********************************************************************** */
 
-$article_theme_topic__header--color: $blue-darker;
+$article_theme_topic--color: $blue-darker;
+$article_font-blue-light--color: $blue-light;
 
 $header__sandwich-ico--BGColor: $blue;
 $header__sandwich-ico-after-before--BGColor: $header__sandwich-ico--BGColor;
@@ -20,3 +24,6 @@ $link--color: $white;
 $link--background-color: $blue-dark;
 $link__text--boxShadow: $dark-faded;
 
+$card__learn-text--color: $blue-dark;
+$card--background-color: $white;
+$card--shadow-color: $gray;

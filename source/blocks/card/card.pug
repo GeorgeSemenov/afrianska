@@ -1,5 +1,12 @@
+include __learn-arrow/card__learn-arrow.pug
+include __learn-text/card__learn-text.pug
+include __img-container/card__img-container.pug
 include __next-block/card__next-block.pug
 include __img/card__img.pug
+include ../article/article.pug
+include ../../img/svg/arrow.pug
 mixin card(modifier)
   .card&attributes(attributes)
-    +card__img(modifier)
+    +card__img-container(modifier)
+    +article(modifier)(class="card__article article_font_middle article_font_gilroy article_font_blue-light article_text_faded")
+    +card__next-block(modifier)

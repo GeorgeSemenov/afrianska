@@ -1,3 +1,7 @@
+@import '_text_faded/article_text_faded';
+@import '_font_blue-light/article_font_blue-light';
+@import '_font_middle/article_font_middle';
+@import '_font_gilroy/article_font_gilroy';
 @import '_theme_topic/article_theme_topic';
 @import '__text/article__text';
 @import '__header/article__header';
@@ -6,5 +10,14 @@
 
   &.article_theme_topic{
     font-family: 'gilroy' ,times , serif;
+    color: $article_theme_topic--color;
+  }
+
+  &.article_font_gilroy {
+    font-family: 'gilroy' ,times , serif;
+  }
+
+  &.article_font_blue-light{
+    color: $article_font-blue-light--color;
   }
 }

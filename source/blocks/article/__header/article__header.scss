@@ -8,6 +8,14 @@
     font-size: 4rem;
     font-weight: 500;
     line-height: 45px;
-    color: $article_theme_topic__header--color;
+  }
+}
+
+.article_font_middle {
+  .article__header {
+    line-height: 29px;
+    font-weight: 500;
+    font-size: 2.2rem;
+    margin-bottom: 16px;
   }
 }
