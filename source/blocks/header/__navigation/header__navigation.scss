@@ -1,26 +1,29 @@
 .header__navigation {
-  transition: width 0.5s ease-out;
+  transition: transform 0.5s ease-out;
   display: flex;
   flex-grow: 1;
   justify-content: space-evenly;
   position: relative;
-  left: 100%;
+  transform: translateX(100%);
   @media (max-width: $md - 1px){
+    position: absolute;
+    transform: translateY(-100%);
+    top: 45;
     left: 0;
-    top: 0;
     opacity: 0;
   }
 }
 
-.header__sandwich-input:checked ~ .header__content .header__navigation{
-    left: 0%;
+.header_expanded{
+  .header__navigation{
+    transform: translateX(0);
 
     @media (max-width: $md - 1px){
-      position: absolute;
-      top: 45px;
+      transform: translateY(0);
       opacity: 1;
       width: 100vw;
       text-align: center;
       flex-direction: column;
     }
   }
+}
