@@ -1,6 +1,8 @@
 .header__sandwich-ico-container {
   width: 25px;
-  height: 20px;
+  height: 16px;
   position: relative;
   display: block;
+  bottom: 11px;
+  flex-shrink: 0;
 }

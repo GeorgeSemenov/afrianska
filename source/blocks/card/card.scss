@@ -1,3 +1,4 @@
+@import '_position-img_left/card_position-img_left';
 @import '__learn-arrow/card__learn-arrow';
 @import '__learn-text/card__learn-text';
 @import '__img-container/card__img-container';
@@ -6,7 +7,7 @@
 @import '__img/card__img';
 @import '../article/article';
 $card-width: 380px;//От этого показателя будет зависить padding-X
-$card-width-mobile: 100% ;
+$card-width-mobile: 320px;
 .card {
   @include px($card-width*0.12);
   width: 380px;

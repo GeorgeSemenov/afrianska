@@ -19,3 +19,13 @@
     margin-bottom: 16px;
   }
 }
+.article_const_font{
+  .article__text{
+    font-size: 70px;
+  }
+}
+.article_const_font.article_font_middle{
+  .article__header{
+    font-size: 22px;
+  }
+}

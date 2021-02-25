@@ -1,1 +1,8 @@
-.card__img {}
+.card__img {
+}
+.card_position-img_left{
+  .card__img{
+    position: relative;
+    right: 30px;
+  }
+}

@@ -7,6 +7,8 @@ html(lang="ru")
     meta(charset = "utf-8")
     meta(name="viewport", content="initial-scale=1.0, width=device-width")
     title Afrianska
+    //-В папке build будет лежать файл фавикона, строка которая находится ниже позволит подцепить этот файл
+    link(rel="icon" href="favicon.ico" type="image/icon")
   body
     +header({
       navigationAr: ['home', 'blog', 'contact us']
@@ -31,7 +33,13 @@ html(lang="ru")
         {
           imgName:'newspaper',
           header: 'Make Your buisiness To Be Better Famous In Internet',
-          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
+          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+          modificator:'card_position-img_left'
         },
+        {
+          imgName:'lady',
+          header: 'Build Your Digital Product That Suitable For Your Need',
+          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
+        }
       ]
     })

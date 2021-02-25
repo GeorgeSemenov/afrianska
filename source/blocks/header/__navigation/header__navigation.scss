@@ -1,5 +1,5 @@
 .header__navigation {
-  transition: transform 0.5s ease-out;
+  transition: 0.5s ease-out;
   display: flex;
   flex-grow: 1;
   justify-content: space-evenly;
@@ -8,9 +8,14 @@
   @media (max-width: $md - 1px){
     position: absolute;
     transform: translateY(-100%);
-    top: 45;
+    top: 43px;
     left: 0;
     opacity: 0;
+    text-align: center;
+    flex-direction: column;
+    width: 100vw;
+    padding-bottom: 10px;
+    border-radius: 0 0 10px 10px;
   }
 }
 
@@ -21,9 +26,7 @@
     @media (max-width: $md - 1px){
       transform: translateY(0);
       opacity: 1;
-      width: 100vw;
-      text-align: center;
-      flex-direction: column;
+      background-color: $header__navigation_expanded--BGColor;
     }
   }
 }

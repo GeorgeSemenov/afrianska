@@ -1,4 +1,4 @@
 mixin cards-screen__container(modifier)
   .cards-screen__container&attributes(attributes)
     each card in modifier.cardsArr
-      +card(card)
+      +card(card)(class=card.modificator)

@@ -12,6 +12,11 @@
   padding-top: 48px;
   padding-left: 83px;
   padding-right: 86px;
+  background-color: $header--BGColor;
+  position: fixed;
+  width: 100vw;
+  box-sizing: border-box;
+  z-index: 10;
 
   @media (max-width: $md - 1px){
     padding-top: 10px;
