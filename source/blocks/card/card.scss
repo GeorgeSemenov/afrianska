@@ -10,7 +10,7 @@ $card-width: 380px;//От этого показателя будет завис�
 $card-width-mobile: 320px;
 .card {
   @include px($card-width*0.12);
-  width: 380px;
+  width: $card-width;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -21,5 +21,12 @@ $card-width-mobile: 320px;
   @media (max-width: $sm - 1px){
     @include px(10px);
     width: $card-width-mobile;
+  }
+
+  &.swiper-slide{
+    @media (min-width: $md){
+      width: $card-width;
+      height: auto;
+    }
   }
 }

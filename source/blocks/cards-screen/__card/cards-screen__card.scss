@@ -1,0 +1,5 @@
+.cards-screen__card {
+  &:last-child{
+    @include my(auto);
+  }
+}

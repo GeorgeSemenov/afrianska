@@ -3,4 +3,10 @@
   top: 192px;
   left: 210px;
   width: 370px;
+  @media (max-width: $xl - 1px){
+    left: 120px;
+    position: static;
+    flex-basis: 100%;
+    text-align: center;
+  }
 }

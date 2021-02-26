@@ -1,0 +1,5 @@
+.cards-screen__pagination {
+  @media (min-width: $md){
+    display: none;
+  }
+}

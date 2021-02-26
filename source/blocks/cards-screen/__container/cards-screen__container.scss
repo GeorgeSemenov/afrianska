@@ -1,1 +1,31 @@
-.cards-screen__container {}
+$cards-container--height: 1218px;
+.cards-screen__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
+  height: $cards-container--height;
+  padding-top: 40px;
+  align-content: space-between;
+  flex-basis: 67%;
+  justify-content: space-between;
+
+  @media (max-width: $xl - 1px){
+    flex-basis: 80%;
+  }
+
+  @media (max-width: $lg - 1px){
+    padding-top: 0px;
+    flex-basis: 100%;
+  }
+  @media (max-width: $md - 1px){
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+
+  &.swiper-wrapper{
+    @media (min-width: $lg){
+      height: $cards-container--height;
+    }
+  }
+}
+

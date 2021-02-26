@@ -1,7 +1,9 @@
+include __pagination/cards-screen__pagination.pug
 include __container/cards-screen__container.pug
 include ../article/article.pug
 include ../card/card.pug
 mixin cards-screen(modifier)
-  .cards-screen&attributes(attributes)
+  .cards-screen(class= "swiper-container")&attributes(attributes)
     +article(Object.assign({},{header:modifier.header}))(class="cards-screen__article article_theme_topic")
     +cards-screen__container(modifier)
+    +cards-screen__pagination(modifier)

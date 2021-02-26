@@ -50,6 +50,7 @@
     "jquery": "3.4.1",
     "jquery-ui": "1.12.1",
     "jquery-ui-dist": "1.12.1",
-    "pug-html-loader": "^1.1.5"
+    "pug-html-loader": "^1.1.5",
+    "swiper": "^6.4.15"
   }
 }
