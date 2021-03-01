@@ -1,7 +1,7 @@
 import Swiper from '../../../node_modules/swiper/swiper-bundle.js';
 $(document).ready(function(){
 
-  var breakpoint= window.matchMedia('(min-width:767px)');
+  var breakpoint= window.matchMedia('(min-width:991px)');
   var swiper; // объявляю переменную, чтобы она была видна во всех функциях
 
   var breakpointChecker = function(){
