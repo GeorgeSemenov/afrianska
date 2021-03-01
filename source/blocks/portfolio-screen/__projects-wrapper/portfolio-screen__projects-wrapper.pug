@@ -1,0 +1,12 @@
+mixin portfolio-screen__projects-wrapper(modifier)
+  .portfolio-screen__projects-wrapper&attributes(attributes)
+    if modifier.projectsArr == undefined
+      - modifier.projectsArr = [];
+
+    each item in modifier.projectsArr
+      if item.isRow
+        +portfolio-screen__project-row(item)
+      else
+        if modifier.modifier == undefined
+          - modifier.modifier = '';
+        +portfolio-screen__project(item)(class=item.modifier)

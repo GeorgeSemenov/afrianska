@@ -1,0 +1,11 @@
+@import '__project-row/portfolio-screen__project-row';
+@import '__projects-wrapper/portfolio-screen__projects-wrapper';
+@import '__project/portfolio-screen__project';
+@import '__project/_theme_big/portfolio-screen__project_theme_big';
+@import '__article/portfolio-screen__article';
+@import '../article/article';
+.portfolio-screen {
+  @media (max-width: $lg - 1px){
+    padding-top: 15px
+  }
+}

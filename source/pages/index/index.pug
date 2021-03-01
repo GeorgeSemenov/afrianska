@@ -1,6 +1,7 @@
 include ../../blocks/header/header.pug
 include ../../blocks/main-screen/main-screen.pug
 include ../../blocks/cards-screen/cards-screen.pug
+include ../../blocks/portfolio-screen/portfolio-screen.pug
 doctype html
 html(lang="ru")
   head
@@ -41,5 +42,30 @@ html(lang="ru")
           text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
           modificator:'card_position-img_left'
         },
+      ]
+    })
+    +portfolio-screen({
+      screen_header: "Our Finished Project",
+      screen_description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do<br/> eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut<br/> enim ad minim veniam.",
+      projectsArr: [
+        {
+          isRow: false,
+          modifier: "portfolio-screen__portfolio_theme_big",
+          project_header: "Smart Home Installation",
+          project_text: "In Muarakana Housing Estate"
+        },
+        {
+          isRow: true,
+          projects_in_rowArr: [
+            {
+              project_header: "Sparklite APP",
+              project_text: "Marketplace"
+            },
+            {
+              project_header: "Car-Rapetition App",
+              project_text: "Board"
+            }
+          ]
+        }
       ]
     })

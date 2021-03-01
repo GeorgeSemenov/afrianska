@@ -1,0 +1,5 @@
+.portfolio-screen__article {
+  width: 69%;
+  @include mx(auto);
+  justify-content: space-between;
+}

@@ -1,0 +1,5 @@
+mixin portfolio-screen__project(modifier)
+  .portfolio-screen__project&attributes(attributes)
+    if modifier == undefined
+        - modifier = {};
+    +article(Object.assign({},{header:modifier.project_header, text:modifier.project_text, }))

@@ -15,11 +15,12 @@ $blue-darker: #316099;//rgba(49, 96, 153, 1)
 
 $article_theme_topic--color: $blue-darker;
 $article_font-blue-light--color: $blue-light;
+$article_theme_screen-header--color: $blue-light;
 
 $header--BGColor: $white;
 $header__sandwich-ico--BGColor: $blue;
 $header__sandwich-ico-after-before--BGColor: $header__sandwich-ico--BGColor;
-$header__item: $blue-darker;
+$header__item--color: $blue-darker;
 $header__navigation_expanded--BGColor: $header--BGColor;
 
 $link--color: $white;
@@ -29,3 +30,4 @@ $link__text--boxShadow: $dark-faded;
 $card__learn-text--color: $blue-dark;
 $card--background-color: $white;
 $card--shadow-color: $gray;
+

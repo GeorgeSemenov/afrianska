@@ -2,6 +2,8 @@ include __text/article__text.pug
 include __header/article__header.pug
 mixin article(modifier)
   .article&attributes(attributes)
+    if attributes.class == undefined
+        - attributes.class = "";
     +article__header(modifier)
     if (attributes.class.indexOf('article_theme_topic')==-1)
       +article__text(modifier)

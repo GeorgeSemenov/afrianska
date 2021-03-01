@@ -16,9 +16,9 @@
 html{
   font-size: 10px;
   @media (max-width: $lg - 1px){
-    font-size: 7px;
+    font-size: 9px;
   }
-  @media (max-width: $sm - 1px){
+  @media (max-width: $md - 1px){
     font-size: 7px;
   }
 }
