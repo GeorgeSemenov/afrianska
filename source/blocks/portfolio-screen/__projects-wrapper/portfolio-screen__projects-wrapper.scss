@@ -1,1 +1,14 @@
-.portfolio-screen__projects-wrapper {}
+.portfolio-screen__projects-wrapper {
+  &>*{
+    margin-bottom:96px;
+    @media (max-width: $lg - 1px){
+      margin-bottom: 60px;
+    }
+    @media (max-width: $md - 1px){
+      margin-bottom: 40px;
+    }
+    &:last-child{
+      margin-bottom: 0px;
+    }
+  }
+}

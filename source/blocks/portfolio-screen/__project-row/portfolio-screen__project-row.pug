@@ -1,4 +1,4 @@
 mixin portfolio-screen__project-row(modifier)
   .portfolio-screen__project-row&attributes(attributes)
     each project in modifier.projects_in_rowArr
-      +portfolio-screen__project(project)
+      +portfolio-screen__project(project)(class=project.modifier)

@@ -1,7 +1,14 @@
+@import '__project-description/portfolio-screen__project-description';
+@import '__project-name/portfolio-screen__project-name';
+@import '__project-text-container/portfolio-screen__project-text-container';
+@import '__content/portfolio-screen__content';
 @import '__project-row/portfolio-screen__project-row';
 @import '__projects-wrapper/portfolio-screen__projects-wrapper';
 @import '__project/portfolio-screen__project';
 @import '__project/_theme_big/portfolio-screen__project_theme_big';
+@import '__project/_background_car-rapetition-app/portfolio-screen__project_background_car-rapetition-app';
+@import '__project/_background_smart-house/portfolio-screen__project_background_smart-house';
+@import '__project/_background_sparklite-app/portfolio-screen__project_background_sparklite-app';
 @import '__article/portfolio-screen__article';
 @import '../article/article';
 .portfolio-screen {

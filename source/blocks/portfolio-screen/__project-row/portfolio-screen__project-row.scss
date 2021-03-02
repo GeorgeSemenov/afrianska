@@ -1,1 +1,8 @@
-.portfolio-screen__project-row {}
+.portfolio-screen__project-row {
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: $lg - 1px){
+    justify-content: center;
+    flex-direction:column;
+  }
+}

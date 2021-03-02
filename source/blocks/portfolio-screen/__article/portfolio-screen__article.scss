@@ -1,5 +1,8 @@
 .portfolio-screen__article {
-  width: 69%;
-  @include mx(auto);
   justify-content: space-between;
+  margin-bottom: 47px;
+
+  @media (max-width: $md - 1px){
+    margin-bottom: 15px;
+  }
 }

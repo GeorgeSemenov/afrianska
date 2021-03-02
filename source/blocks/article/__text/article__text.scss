@@ -39,3 +39,17 @@
     }
   }
 }
+
+.article_theme_project-style {
+  .article__text{
+    letter-spacing: 0.05em;
+    text-align: right;
+    width: 100%;
+    font-size: 16px;
+  }
+}
+.article_text-align_left{
+  .article__text{
+    text-align: left;
+  }
+}

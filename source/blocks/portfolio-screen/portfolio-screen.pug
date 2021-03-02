@@ -1,8 +1,11 @@
+include __project-description/portfolio-screen__project-description.pug
+include __project-name/portfolio-screen__project-name.pug
+include __project-text-container/portfolio-screen__project-text-container.pug
+include __content/portfolio-screen__content.pug
 include __project-row/portfolio-screen__project-row.pug
 include ../article/article.pug
 include __projects-wrapper/portfolio-screen__projects-wrapper.pug
 include __project/portfolio-screen__project.pug
 mixin portfolio-screen(modifier)
   .portfolio-screen&attributes(attributes)
-    +article(Object.assign({},{header:modifier.screen_header,text:modifier.screen_description}))(class="portfolio-screen__article article_theme_screen-header")
-    +portfolio-screen__projects-wrapper(modifier)
+    +portfolio-screen__content(modifier)

@@ -1,0 +1,14 @@
+.portfolio-screen__project-description {
+  letter-spacing: 0.05em;
+  text-align: left;
+  width: 100%;
+  font-size: 16px;
+  opacity: 0.6;
+}
+
+.portfolio-screen__project_theme_big{
+  .portfolio-screen__project-description{
+    display: inline-block;
+    text-align: right;
+  }
+}
