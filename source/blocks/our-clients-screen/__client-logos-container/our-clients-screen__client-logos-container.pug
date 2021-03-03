@@ -1,0 +1,6 @@
+mixin our-clients-screen__client-logos-container(modifier)
+  .our-clients-screen__client-logos-container&attributes(attributes)
+    if modifier.clientLogosArr == undefined
+        - modifier.clientLogosArr = [];
+    each clientLogo in modifier.clientLogosArr
+      +our-clients-screen__client-logo-container(clientLogo)

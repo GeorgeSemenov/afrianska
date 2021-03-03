@@ -1,9 +1,9 @@
 <snippet>
   <content><![CDATA[
-Object.assign({},{${1:property}:modifier.${2:${1:property}}, ${3:} })
+padding-top: ${1:}px;
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>ass</tabTrigger>
+  <tabTrigger>pt</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <!-- <scope>source.python</scope> -->
 </snippet>

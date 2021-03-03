@@ -1,3 +1,4 @@
+@import '_theme_light/article_theme_light';
 @import '_text-align_left/article_text-align_left';
 @import '_theme_project-style/article_theme_project-style';
 @import '_theme_screen-header/article_theme_screen-header';
@@ -34,5 +35,8 @@
   &.article_theme_project-style{
     font-family: 'gilroy' ,times , serif;
     letter-spacing: 0.05em;
+  }
+  &.article_theme_light{
+    color: $article_theme_light--color;
   }
 }

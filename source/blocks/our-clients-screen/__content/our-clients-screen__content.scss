@@ -1,10 +1,8 @@
-.portfolio-screen__content {
+.our-clients-screen__content {
   @include mx(auto);
   width: 69%;
-
-
-  @media (max-width: $xl - 1px){
-    width:90%;
+  @media (max-width: $lg - 1px){
+    width: 90%;
   }
   @media (max-width: $md - 1px){
     width: 100%;

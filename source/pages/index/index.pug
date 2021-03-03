@@ -1,7 +1,8 @@
-include ../../blocks/header/header.pug
-include ../../blocks/main-screen/main-screen.pug
-include ../../blocks/cards-screen/cards-screen.pug
-include ../../blocks/portfolio-screen/portfolio-screen.pug
+//- include ../../blocks/header/header.pug
+//- include ../../blocks/main-screen/main-screen.pug
+//- include ../../blocks/cards-screen/cards-screen.pug
+//- include ../../blocks/portfolio-screen/portfolio-screen.pug
+include ../../blocks/our-clients-screen/our-clients-screen.pug
 doctype html
 html(lang="ru")
   head
@@ -11,63 +12,68 @@ html(lang="ru")
     //-В папке build будет лежать файл фавикона, строка которая находится ниже позволит подцепить этот файл
     link(rel="icon" href="favicon.ico" type="image/icon")
   body
-    +header({
-      navigationAr: ['home', 'blog', 'contact us']
-    })
-    +main-screen({
-      article:{
-        header:"New Automation <br/>Tool for Your Home",
-        text:"Lorem iposum dolor sit amet, consectetur adipiscing elit. Faucibus tristique vulputate ultrices ut mauris tellus at. Posuere sollicitudin adio tellus elit."
-      },
-      link:{
-        text:"See Our Projects"
-      }
-    })
-    +cards-screen({
-      header: 'What we do to help our client grow in digital era,',
-      cardsArr:[
-        {
-          imgName:'multifunction',
-          header: 'Bring Technology To Your Comfotable Home',
-          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
-        },
-        {
-          imgName:'lady',
-          header: 'Build Your Digital Product That Suitable For Your Need',
-          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
-        },
-        {
-          imgName:'newspaper',
-          header: 'Make Your buisiness To Be Better Famous In Internet',
-          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-          modificator:'card_position-img_left'
-        },
-      ]
-    })
-    +portfolio-screen({
-      screen_header: "Our Finished Project",
-      screen_description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do<br/> eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut<br/> enim ad minim veniam.",
-      projectsArr: [
-        {
-          isRow: false,
-          modifier: "portfolio-screen__project_theme_big portfolio-screen__project_background_smart-house",
-          project_header: "Smart Home Installation",
-          project_text: "In Muarakana Housing Estate"
-        },
-        {
-          isRow: true,
-          projects_in_rowArr: [
-            {
-              modifier: "portfolio-screen__project_background_sparklite-app",
-              project_header: "Sparklite App",
-              project_text: "Marketplace"
-            },
-            {
-              modifier: "portfolio-screen__project_background_car-rapetition-app",
-              project_header: "Car-Rapetition App",
-              project_text: "Board"
-            }
-          ]
-        }
-      ]
+    //- +header({
+    //-   navigationAr: ['home', 'blog', 'contact us']
+    //- })
+    //- +main-screen({
+    //-   article:{
+    //-     header:"New Automation <br/>Tool for Your Home",
+    //-     text:"Lorem iposum dolor sit amet, consectetur adipiscing elit. Faucibus tristique vulputate ultrices ut mauris tellus at. Posuere sollicitudin adio tellus elit."
+    //-   },
+    //-   link:{
+    //-     text:"See Our Projects"
+    //-   }
+    //- })
+    //- +cards-screen({
+    //-   header: 'What we do to help our client grow in digital era,',
+    //-   cardsArr:[
+    //-     {
+    //-       imgName:'multifunction',
+    //-       header: 'Bring Technology To Your Comfotable Home',
+    //-       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
+    //-     },
+    //-     {
+    //-       imgName:'lady',
+    //-       header: 'Build Your Digital Product That Suitable For Your Need',
+    //-       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
+    //-     },
+    //-     {
+    //-       imgName:'newspaper',
+    //-       header: 'Make Your buisiness To Be Better Famous In Internet',
+    //-       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+    //-       modificator:'card_position-img_left'
+    //-     },
+    //-   ]
+    //- })
+    //- +portfolio-screen({
+    //-   screen_header: "Our Finished Project",
+    //-   screen_description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    //-   projectsArr: [
+    //-     {
+    //-       isRow: false,
+    //-       modifier: "portfolio-screen__project_theme_big portfolio-screen__project_background_smart-house",
+    //-       project_header: "Smart Home Installation",
+    //-       project_text: "In Muarakana Housing Estate"
+    //-     },
+    //-     {
+    //-       isRow: true,
+    //-       projects_in_rowArr: [
+    //-         {
+    //-           modifier: "portfolio-screen__project_background_sparklite-app",
+    //-           project_header: "Sparklite App",
+    //-           project_text: "Marketplace"
+    //-         },
+    //-         {
+    //-           modifier: "portfolio-screen__project_background_car-rapetition-app",
+    //-           project_header: "Car-Rapetition App",
+    //-           project_text: "Board"
+    //-         }
+    //-       ]
+    //-     }
+    //-   ]
+    //- })
+    +our-clients-screen({
+      screen_header: "Our Beloved Client",
+      screen_description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      clientLogosArr: ['logo-1','logo-2','logo-3','logo-4','logo-5','logo-6','logo-7']
     })

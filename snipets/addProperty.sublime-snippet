@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-${1:property}:modifier.${2:${1:property}}
+${1:property}:modifier.${2:${1:property}}, ${3:}  
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>ad</tabTrigger>

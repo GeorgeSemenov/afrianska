@@ -1,0 +1,10 @@
+@import '__client-logo-conatiner/our-clients-screen__client-logo-container';
+@import '__content/our-clients-screen__content';
+@import '__client-logo/our-clients-screen__client-logo';
+@import '__client-logos-container/our-clients-screen__client-logos-container';
+@import '__article/our-clients-screen__article';
+.our-clients-screen {
+  padding-top: 96px;
+  background-color: $our-clients-screen--BGColor;
+  border-radius: 200px 0px 0px 0px;
+}

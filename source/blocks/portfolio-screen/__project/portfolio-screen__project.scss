@@ -1,6 +1,7 @@
 .portfolio-screen__project {
   height: 417px;
   width: 422px;
+  border-radius: 10px;
   display: flex;
   box-sizing: border-box;
   padding-top: 3.5%;
@@ -14,6 +15,10 @@
     padding-right: 5%;
     width: 100%;
     justify-content: flex-end;
+    @media (max-width: $md - 1px){
+      width: 95%;
+      @include mx(auto);
+    }
   }
   &.portfolio-screen__project_background_smart-house{
     background-image: url("../../img/smart-house.png");

@@ -37,6 +37,11 @@
       position: static;
       text-align: center;
     }
+    @media (max-width: $md - 1px){
+      width: auto;
+      @include px(10px);
+      display: inline-block;
+    }
   }
 }
 

@@ -1,0 +1,4 @@
+mixin our-clients-screen__content(modifier)
+  .our-clients-screen__content&attributes(attributes)
+    +article(Object.assign({},{header:modifier.screen_header,text:modifier.screen_description}))(class="our-clients-screen__article article_theme_screen-header article_theme_light")
+    +our-clients-screen__client-logos-container(modifier)

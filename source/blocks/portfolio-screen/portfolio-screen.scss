@@ -12,7 +12,15 @@
 @import '__article/portfolio-screen__article';
 @import '../article/article';
 .portfolio-screen {
+  padding-bottom: 192px;
   @media (max-width: $lg - 1px){
-    padding-top: 15px
+    padding-top: 15px;
+    padding-bottom: 100px;
+  }
+  @media (max-width: $md - 1px){
+      padding-bottom: 50px;
+  }
+  @media (max-width: $sm - 1px){
+    padding-bottom: 25px;
   }
 }
