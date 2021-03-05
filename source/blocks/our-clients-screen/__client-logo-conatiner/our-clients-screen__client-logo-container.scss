@@ -1,1 +1,14 @@
-.our-clients-screen__client-logo-container {}
+.our-clients-screen__client-logo-container {
+  border-right: 1px solid $our-clients-screen__client-logo-container--borderColor;
+  border-bottom: 1px solid $our-clients-screen__client-logo-container--borderColor;
+  cursor: pointer;
+  text-align: center;
+  &:nth-child(4n){
+    border-right: 0px;
+  }
+  &:nth-child(5),
+  &:nth-child(6),
+  &:nth-child(7){
+    border-bottom: 0px;
+  }
+}

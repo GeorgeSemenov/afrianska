@@ -1,9 +1,10 @@
 /* no sense variables */
 $dark-faded: rgba(53, 110, 173, 0.2);
-$white: #fff;
 $gray: rgba(16, 112, 177, 0.2);
 $transparent: transparent;
 
+$white: #fff;
+$white-faded: rgba(255,255,255, 0.4);
 
 $blue-light: #1f3f68;//rgba(31, 63, 104, 1)
 $blue: #356EAD;//rgba(53, 110, 173, 1)
@@ -35,3 +36,6 @@ $card--shadow-color: $gray;
 $portfolio-screen__project-text-container--color: $white;
 
 $our-clients-screen--BGColor: $blue-dark;
+$our-clients-screen__client-logo-container--borderColor: $white-faded;
+$our-clients-screen__more-client-link--color: $white;
+$our-clients-screen__more-client-link-hover--BGColor: $gray;

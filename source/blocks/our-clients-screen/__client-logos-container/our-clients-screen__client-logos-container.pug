@@ -4,3 +4,4 @@ mixin our-clients-screen__client-logos-container(modifier)
         - modifier.clientLogosArr = [];
     each clientLogo in modifier.clientLogosArr
       +our-clients-screen__client-logo-container(clientLogo)
+    +our-clients-screen__more-client-link(modifier)

@@ -1,0 +1,4 @@
+mixin our-clients-screen__more-client-link(modifier)
+  if modifier.lastCellText == undefined
+      - modifier.lastCellText = 'More Client';
+  span.our-clients-screen__more-client-link&attributes(attributes)!=modifier.lastCellText
