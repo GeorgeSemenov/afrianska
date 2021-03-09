@@ -7,14 +7,16 @@
   line-height: 46px;
   color: $our-clients-screen__more-client-link--color;
   position: relative;
-  bottom: 6px;
-  right: 5px;
   cursor: pointer;
+  text-decoration: none;
 
   &:hover{
     background-color: $our-clients-screen__more-client-link-hover--BGColor;
   }
   &:active{
     background-color: darken($our-clients-screen__more-client-link-hover--BGColor, 10%);
+  }
+  @media (max-width: 600px){
+    font-size: 12px;
   }
 }

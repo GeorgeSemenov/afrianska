@@ -8,4 +8,8 @@
   padding-top: 96px;
   background-color: $our-clients-screen--BGColor;
   border-radius: 200px 0px 0px 0px;
+
+  @media (max-width: $sm - 1px){
+    border-radius: 100px 0px 0px 0px;
+  }
 }

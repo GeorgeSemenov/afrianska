@@ -11,4 +11,14 @@
   &:nth-child(7){
     border-bottom: 0px;
   }
+  @media (max-width: $xl - 1px){
+    border-bottom: 1px solid $our-clients-screen__client-logo-container--borderColor;
+    &:nth-child(2n){
+      border-right: 0;
+    }
+    &:nth-child(5),
+    &:nth-child(6){
+      border-bottom: 1px solid $our-clients-screen__client-logo-container--borderColor;
+    }
+  }
 }

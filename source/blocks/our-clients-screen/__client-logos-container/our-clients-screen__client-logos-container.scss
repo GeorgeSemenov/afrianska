@@ -6,4 +6,7 @@
   @media (max-width: $xl - 1px){
     grid-template-columns: repeat(2, 235px);
   }
+  @media (max-width: 600px){
+    grid-template-columns: repeat(2, 115px);
+  }
 }
