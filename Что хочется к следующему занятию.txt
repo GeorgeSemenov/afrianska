@@ -13,6 +13,9 @@
   уже занято, как бы назвать? (about us, project ... etc)
 5)Хорошо бы чтобы Лиза взглянула на реализацию расположения карточек в 
   cards-container
+6) почему в примере https://codepen.io/Goshanbo/pen/KKNbWoq?editors=1100
+  если убрать grid-column: 2 в .grid.reverse div:first-child то столбцы меняются
+  местами ?
 
 
 last one)Чувствую потребность в семантике и в улучшении использования css

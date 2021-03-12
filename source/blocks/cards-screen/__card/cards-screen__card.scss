@@ -1,6 +1,5 @@
-https://codepen.io/Goshanbo/pen/KKNbWoq?editors=1100
 .cards-screen__card {
-  &:last-child{
-    @include my(auto);
+  &:nth-child(3n-1){
+    grid-row: span 2
   }
 }

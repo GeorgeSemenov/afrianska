@@ -1,4 +1,3 @@
-https://codepen.io/Goshanbo/pen/KKNbWoq?editors=1100
 $cards-container--height: 1218px;
 .cards-screen__container {
   display: grid;
@@ -21,10 +20,5 @@ $cards-container--height: 1218px;
   @media (max-width: $md - 1px){
   }
 
-  &.swiper-wrapper{
-    @media (min-width: $lg){
-      height: $cards-container--height;
-    }
-  }
 }
 
