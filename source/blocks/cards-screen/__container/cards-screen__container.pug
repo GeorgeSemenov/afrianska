@@ -1,9 +1,4 @@
 mixin cards-screen__container(modifier)
-  .cards-screen__container(class = "" )&attributes(attributes)
+  .cards-screen__container(class = "swiper-wrapper" )&attributes(attributes)
     each card in modifier.cardsArr
-      if card.modificator == undefined
-          - card.modificator = '';
-      +card(card)(class= (card.modificator + 'cards-screen__card '))
-
-  //-
-    "swiper-wrapper" swiper-slide
+      +cards-screen__card-wrapper(card)(class= 'cards-screen__card swiper-slide')

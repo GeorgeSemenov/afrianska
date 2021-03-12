@@ -1,0 +1,5 @@
+mixin cards-screen__card-wrapper(modifier)
+  .cards-screen__card-wrapper&attributes(attributes)
+    if modifier.modificator == undefined
+      - modifier.modificator = '';
+    +card(modifier)(class= (modifier.modificator))

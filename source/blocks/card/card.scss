@@ -20,11 +20,11 @@ $card-width-mobile: 320px;
 
   @media (max-width: $sm - 1px){
     @include px(10px);
-    width: $card-width-mobile;
+    width: 100%;
   }
 
   &.swiper-slide{
-    @media (min-width: $md){
+    @media (min-width: $sm){
       width: $card-width;
       height: auto;
     }

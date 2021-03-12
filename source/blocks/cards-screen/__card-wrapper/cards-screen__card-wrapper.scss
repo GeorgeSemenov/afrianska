@@ -1,0 +1,7 @@
+.cards-screen__card-wrapper {
+  &:nth-child(3n-2){
+    display: flex;
+    grid-row: span 2;
+    align-items: center;
+  }
+}

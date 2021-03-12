@@ -1,19 +1,24 @@
-$cards-container--height: 1218px;
 .cards-screen__container {
+  width: 80%;
+  padding-left: 80px;
+  row-gap: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  flex-direction: column;
+  justify-items: center;
   padding-top: 40px;
   align-content: space-between;
   justify-content: space-between;
 
   @media (max-width: $xl - 1px){
-    flex-basis: 90%;
+    width: 90%;
+    row-gap: 70px;
+    padding-left: 0;
   }
 
   @media (max-width: $lg - 1px){
+    width: 95%;
+    row-gap: 50px;
     padding-top: 0px;
-    flex-basis: 100%;
     flex-wrap: nowrap;
     flex-direction: row;
   }
