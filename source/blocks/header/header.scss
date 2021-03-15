@@ -1,3 +1,4 @@
+@import '_theme_small/header_theme_small';
 @import '_expanded/header_expanded';
 @import '../logo/logo';
 @import '__content/header__content';
@@ -9,7 +10,7 @@
 .header {
   display: flex;
   align-items: flex-end;
-  padding-top: 48px;
+  @include py(48px);
   padding-left: 83px;
   padding-right: 86px;
   background-color: $header--BGColor;
@@ -17,10 +18,14 @@
   width: 100vw;
   box-sizing: border-box;
   z-index: 10;
+  @include transition();
 
   @media (max-width: $md - 1px){
-    padding-top: 10px;
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  &.header_theme_small{
+    @include py(15px);
   }
 }

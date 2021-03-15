@@ -27,13 +27,16 @@
 
 .article_theme_screen-header {
   .article__text{
+    line-height: 26px;
     opacity: 0.6;
-    width: 54%;
     display: inline-block;
     position: relative;
-    bottom: 15px;
+    padding-left: 84px;
+    padding-right: 80px;
+    width: 100%;
+    box-sizing: border-box;
     @media (max-width: $lg - 1px){
-      width: 100%;
+      @include px(20px);
       position: static;
       text-align: center;
     }

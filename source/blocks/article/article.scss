@@ -27,9 +27,14 @@
   }
 
   &.article_theme_screen-header{
-    display: block;
     font-family: 'gilroy' ,times , serif;
     color: $article_theme_screen-header--color;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    @media (max-width: $lg - 1px){
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &.article_theme_project-style{

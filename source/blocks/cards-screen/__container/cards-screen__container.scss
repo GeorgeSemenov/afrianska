@@ -22,8 +22,14 @@
     flex-wrap: nowrap;
     flex-direction: row;
   }
-  @media (max-width: $md - 1px){
-  }
 
+  &.swiper-wrapper{
+    @media (min-width: $lg){
+      display: grid;
+    }
+    @media (max-width: $lg - 1px){
+      height: auto;
+    }
+  }
 }
 

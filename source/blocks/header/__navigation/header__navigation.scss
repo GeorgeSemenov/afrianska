@@ -6,6 +6,7 @@
   position: relative;
   transform: translateX(100%);
   opacity: 0;
+  background-color: $header__navigation_expanded--BGColor;
   @media (max-width: $md - 1px){
     position: absolute;
     transform: translateY(-100%);
@@ -26,7 +27,6 @@
 
     @media (max-width: $md - 1px){
       transform: translateY(0);
-      background-color: $header__navigation_expanded--BGColor;
     }
   }
 }

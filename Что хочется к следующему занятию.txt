@@ -16,6 +16,12 @@
 6) почему в примере https://codepen.io/Goshanbo/pen/KKNbWoq?editors=1100
   если убрать grid-column: 2 в .grid.reverse div:first-child то столбцы меняются
   местами ?
+7)интересно, почему если элементу article__text в portfolio-screen
+  задать width: 81%, а затем padding-right , то padding-right будет
+  расти вне блока? Это как-то связанно с box-sizing? 
+8)В элементе portfolio-screen__project_background_smart-house при ширине
+  экрана 320px текст наезжает на картинку, как бы это обставить так, чтобы
+  красиво было?
 
 
 last one)Чувствую потребность в семантике и в улучшении использования css

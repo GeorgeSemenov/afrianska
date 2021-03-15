@@ -7,7 +7,6 @@
 @import '__img/card__img';
 @import '../article/article';
 $card-width: 380px;//От этого показателя будет зависить padding-X
-$card-width-mobile: 320px;
 .card {
   @include px($card-width*0.12);
   width: $card-width;
@@ -18,15 +17,11 @@ $card-width-mobile: 320px;
   box-shadow: 5px 20px 50px $card--shadow-color;
   border-radius: 10px;
 
-  @media (max-width: $sm - 1px){
-    @include px(10px);
+  @media (max-width: $lg - 1px){
+    @include px(15px);
     width: 100%;
-  }
-
-  &.swiper-slide{
-    @media (min-width: $sm){
-      width: $card-width;
-      height: auto;
-    }
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 0.1fr;
   }
 }

@@ -1,7 +1,13 @@
 .cards-screen__card-wrapper {
   &:nth-child(3n-2){
-    display: flex;
     grid-row: span 2;
+    display: flex;
     align-items: center;
+  }
+
+  &.swiper-slide{
+    @media (max-width: $lg - 1px){
+      height: 100%;
+    }
   }
 }
