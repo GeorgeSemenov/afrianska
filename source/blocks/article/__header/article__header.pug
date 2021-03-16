@@ -1,2 +1,5 @@
 mixin article__header(modifier)
-  h3.article__header&attributes(attributes)!=modifier.header
+  if modifier._isMainScreen
+    h1.article__header&attributes(attributes)!=modifier.header
+  else
+    h3.article__header&attributes(attributes)!=modifier.header

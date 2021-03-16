@@ -4,6 +4,10 @@ mixin article(modifier)
   .article&attributes(attributes)
     if attributes.class == undefined
         - attributes.class = "";
+    if (attributes.class.indexOf('article_theme_topic')==-1)
+      - modifier._isMainScreen = true;
+    else 
+      - modifier._isMainScreen = false
     +article__header(modifier)
     if (attributes.class.indexOf('article_theme_topic')==-1)
       +article__text(modifier)

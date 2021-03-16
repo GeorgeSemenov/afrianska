@@ -1,2 +1,3 @@
 mixin header__item(modifier)
-  span.header__item&attributes(attributes)!=modifier
+  li.header__item&attributes(attributes)
+    +header__item-content(modifier)

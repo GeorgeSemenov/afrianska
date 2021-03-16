@@ -1,4 +1,4 @@
 mixin card__next-block(modifier)
-  .card__next-block&attributes(attributes)
+  a.card__next-block(href='#!')&attributes(attributes)
     +card__learn-text(modifier)
-    +card__learn-arrow(modifier)
+    +arrow(class="card__learn-arrow")
