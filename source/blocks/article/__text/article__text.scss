@@ -30,7 +30,6 @@
     line-height: 26px;
     opacity: 0.6;
     display: inline-block;
-    position: relative;
     padding-left: 84px;
     padding-right: 80px;
     width: 100%;
@@ -59,5 +58,12 @@
 .article_text-align_left{
   .article__text{
     text-align: left;
+  }
+}
+
+.article_theme_common-style{
+  .article__text{
+    width: 100%;
+    line-height: 26px;
   }
 }

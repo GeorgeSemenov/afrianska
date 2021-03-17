@@ -4,6 +4,8 @@ include __content/our-clients-screen__content.pug
 include __client-logo/our-clients-screen__client-logo.pug
 include __client-logos-container/our-clients-screen__client-logos-container.pug
 include ../article/article.pug
+include ../footer/footer.pug
 mixin our-clients-screen(modifier)
   .our-clients-screen&attributes(attributes)
     +our-clients-screen__content(modifier)
+    +footer(modifier)

@@ -1,0 +1,19 @@
+@mixin content-frames(){
+  padding-left: 16.3%;
+  padding-right: 15.5%;
+}
+@import '__link/footer__link';
+@import '__article/footer__article';
+@import '__topic/footer__topic';
+@import '../article/article';
+@import '../link/link';
+
+.footer {
+  background-color: $footer--BGColor;
+  border-radius: 0 200px 0 0;
+  padding-top: 70px;
+  margin-right: 7%;
+  @media (max-width: $sm - 1px){
+    margin-right: 0px;
+  }
+}

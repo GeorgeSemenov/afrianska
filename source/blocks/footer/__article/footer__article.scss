@@ -1,0 +1,6 @@
+.footer__article {
+  width: 54%;
+  @media (max-width: $md - 1px){
+    width: 100%;
+  }
+}

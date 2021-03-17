@@ -1,0 +1,6 @@
+include __topic/footer__topic.pug
+include ../article/article.pug
+include ../link/link.pug
+mixin footer(modifier)
+  footer.footer&attributes(attributes)
+    +footer__topic(modifier)

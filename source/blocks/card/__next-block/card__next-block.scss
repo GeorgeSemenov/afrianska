@@ -3,6 +3,9 @@
   margin-bottom: 53px;
   text-decoration: none;
   cursor: pointer;
+  color: $card__learn-text--color;
+  font-family: 'gilroy' ,times , serif;
+  font-size: 15.5px;
 
   &:hover{
     /*это состояние влияет на следующие классы:

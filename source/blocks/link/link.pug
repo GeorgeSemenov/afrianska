@@ -1,2 +1,4 @@
 mixin link(modifier)
+  if modifier.link == undefined
+      - modifier.link = {text:"someValuelinkText"};
   a.link(href="#")&attributes(attributes)!=modifier.link.text

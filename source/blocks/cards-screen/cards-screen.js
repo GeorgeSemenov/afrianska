@@ -21,12 +21,12 @@ $(document).ready(function(){
       pagination: {
         el: '.cards-screen__pagination',
       },
-      // autoplay: {
-      //   delay: 3500,
-      //   disableOnInteraction: false,
-      // },
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
       breakpoints:{
-        510:{
+        767:{
           slidesPerView: 2,
           spaceBetween: 15,
         },
