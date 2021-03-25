@@ -8,9 +8,5 @@ include ../logo/logo.pug
 mixin header(modifier)
   header.header&attributes(attributes)
     +logo()
-    //-__sandwich-ico-container - это бутерброд
-       __sandwich-ico-container - label для __sandwich-input
-       когда назимают на ico-conainer нажимается и __sandwich-input
-       и добавляются новые стили прописанные в __navigation
     +header__content(modifier)
     +header__sandwich-ico-container(modifier)

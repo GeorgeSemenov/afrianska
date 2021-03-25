@@ -1,0 +1,4 @@
+mixin footer__header(modifier)
+  if modifier.header == undefined
+      - modifier.header = "Intersted to work with our team? ";
+  h3.footer__header&attributes(attributes)!=modifier.header

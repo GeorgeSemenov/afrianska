@@ -1,4 +1,6 @@
 mixin footer__topic(modifier)
   .footer__topic&attributes(attributes)
-    +article(Object.assign({},{header:modifier.proposal, text:modifier.proposalDesc,    }))(class="footer__article article_theme_common-style article_theme_light")
-    +link(Object.assign({},{link:{text:modifier.buttonText},  }))(class="link_theme_button")
+    if modifier.buttonText == undefined
+        - modifier.buttonText = "Let's Talk";
+    +footer__text-container(modifier)
+    +link(Object.assign({},{link:{text:modifier.buttonText},  }))(class="link_theme_button footer__link")

@@ -9,6 +9,7 @@ $white-faded: rgba(255,255,255, 0.4);
 $blue-light: #1f3f68;//rgba(31, 63, 104, 1)
 $blue: #356EAD;//rgba(53, 110, 173, 1)
 $blue-dark: #5A98D0;//rgba(90, 152, 208, 1)
+$blue-less-darker: #98C3E8;
 $blue-darker: #316099;//rgba(49, 96, 153, 1)
 
 /* variables with sense */
@@ -41,3 +42,10 @@ $our-clients-screen__more-client-link--color: $white;
 $our-clients-screen__more-client-link-hover--BGColor: $gray;
 
 $footer--BGColor: $blue-darker;
+$footer__header--color: $white;
+$footer__text--color: $footer__header--color;
+$footer__dividing-line: $blue-dark;
+$footer__lText--color: $white;
+$footer__contact--color: $white;
+$footer__item--color: $white;
+$footer__sign--color: $white;

@@ -1,0 +1,4 @@
+mixin footer__sign(modifier)
+  if modifier.sign == undefined
+      - modifier.sign = "2019 © Afrianska. All rights reserved.";
+  span.footer__sign&attributes(attributes)!=modifier.sign

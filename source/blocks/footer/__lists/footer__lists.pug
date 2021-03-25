@@ -1,0 +1,6 @@
+mixin footer__lists(modifier)
+  if modifier.listsArr == undefined
+      - modifier.listsArr = [['About US', 'About', 'What We Do', 'Project', 'How it Work With Us'],['Follow US', 'Instagram', 'Facebook', 'Linkedin', 'Youtube']];
+  .footer__lists&attributes(attributes)
+    each list in modifier.listsArr
+      +footer__list(list)

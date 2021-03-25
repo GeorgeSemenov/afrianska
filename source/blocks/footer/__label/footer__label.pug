@@ -1,0 +1,6 @@
+mixin footer__label(modifier)
+  .footer__label&attributes(attributes)
+    if modifier.logotypeFirstCricleColor == undefined
+        - modifier.logotypeFirstCricleColor = "#98C3E8";
+    +logo(Object.assign({},{firstCricleColor:modifier.logotypeFirstCricleColor,  }))(class="footer__logo")
+    +footer__lText(modifier)

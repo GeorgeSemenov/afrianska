@@ -1,0 +1,16 @@
+.footer__header {
+  font-family: 'gilroy' ,times , serif;
+  font-size: 36px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  color: $footer__header--color;
+  margin-bottom: 34px;
+  width: 80%;
+
+  @media (max-width: $lg - 1px){
+    width: 100%;
+  }
+  @media (max-width: $md - 1px){
+    margin-bottom: 15px;
+  }
+}

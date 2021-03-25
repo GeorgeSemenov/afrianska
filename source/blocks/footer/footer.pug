@@ -1,6 +1,26 @@
+include __sign/footer__sign.pug
+include __item-container/footer__item-container.pug
+include __lists/footer__lists.pug
+include __lText/footer__lText.pug
+include __contacts-container/footer__contacts-container.pug
+include __cText/footer__cText.pug
+include __cLetter/footer__cLetter.pug
+include __dividing-line/footer__dividing-line.pug
+include __item/footer__item.pug
+include __list/footer__list.pug
+include __contact/footer__contact.pug
+include __label/footer__label.pug
+include __contacts/footer__contacts.pug
+include __bottom/footer__bottom.pug
+include __text/footer__text.pug
+include __header/footer__header.pug
+include __text-container/footer__text-container.pug
 include __topic/footer__topic.pug
 include ../article/article.pug
 include ../link/link.pug
+include ../logo/logo.pug
 mixin footer(modifier)
   footer.footer&attributes(attributes)
     +footer__topic(modifier)
+    +footer__dividing-line(modifier)
+    +footer__bottom(modifier)

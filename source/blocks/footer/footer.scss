@@ -1,7 +1,33 @@
+@import '__sign/footer__sign';
+@import '__item-container/footer__item-container';
+@import '__lists/footer__lists';
 @mixin content-frames(){
-  padding-left: 16.3%;
-  padding-right: 15.5%;
+  padding-left: 16.8%;
+  padding-right: 11.5%;
+  @media (max-width: $lg - 1px){
+    @include px(10%);
+  }
+  @media (max-width: $md - 1px){
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }
+@import '__logo/footer__logo';
+@import '__lText/footer__lText';
+@import '__contacts-container/footer__contacts-container';
+@import '__cText/footer__cText';
+@import '__cLetter/footer__cLetter';
+@import '__dividing-line/footer__dividing-line';
+@import '__item-container_theme_title/footer__item-container_theme_title';
+@import '__item/footer__item';
+@import '__list/footer__list';
+@import '__contact/footer__contact';
+@import '__label/footer__label';
+@import '__contacts/footer__contacts';
+@import '__bottom/footer__bottom';
+@import '__text/footer__text';
+@import '__header/footer__header';
+@import '__text-container/footer__text-container';
 @import '__link/footer__link';
 @import '__article/footer__article';
 @import '__topic/footer__topic';
@@ -11,9 +37,14 @@
 .footer {
   background-color: $footer--BGColor;
   border-radius: 0 200px 0 0;
-  padding-top: 70px;
+  padding-top: 6.5%;
   margin-right: 7%;
+  position: relative;
+  @media (max-width: $md - 1px){
+    border-radius: 0 140px 0 0;
+  }
   @media (max-width: $sm - 1px){
     margin-right: 0px;
+    border-radius: 0 100px 0 0;
   }
 }

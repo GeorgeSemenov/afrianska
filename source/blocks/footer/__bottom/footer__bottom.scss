@@ -1,0 +1,16 @@
+.footer__bottom {
+  @include content-frames();
+  padding-top: 102px;
+  display: grid;
+  grid-template-columns: 29% 1fr;
+  grid-row-gap: 45px;
+  padding-bottom: 65px;
+
+  @media (max-width: $lg - 1px){
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+    display: block; // Вынужденная мера, почему то не удаётся выстроить в колонку, приходится отменять сетку
+    padding-bottom: 25px;
+    padding-top: 45px;
+  }
+}
