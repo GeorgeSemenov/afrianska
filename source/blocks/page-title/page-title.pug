@@ -1,0 +1,6 @@
+include __description/page-title__description.pug
+include __header/page-title__header.pug
+mixin page-title(modifier)
+  .page-title&attributes(attributes)
+    +page-title__header(modifier)
+    +page-title__description(modifier)

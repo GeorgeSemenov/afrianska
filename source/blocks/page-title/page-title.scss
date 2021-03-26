@@ -1,0 +1,11 @@
+@import '__description/page-title__description';
+@import '__header/page-title__header';
+.page-title {
+  padding-top: 42px;
+  background-image: url("../../img/page-title--background.png");
+  font-family: 'gilroy' ,times , serif;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $page-title--color;
+  padding-bottom: 50px;
+}

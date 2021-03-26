@@ -1,0 +1,13 @@
+.page-title__description {
+  font-size: 20px;
+  line-height: 30px;
+  opacity: 0.4;
+  @include mx(auto);
+  width: 53%;
+  @media (max-width: $lg - 1px){
+    width: 80%;
+  }
+  @media (max-width: $md - 1px){
+    width: 100%;
+  }
+}

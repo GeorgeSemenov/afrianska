@@ -23,6 +23,10 @@
   &.portfolio-screen__project_background_smart-house{
     background-image: url("../../img/smart-house.png");
     background-repeat: no-repeat;
+    @media (max-width: $sm - 1px){
+      background-image: url("../../img/smart-house-mobile.png");
+      background-repeat: no-repeat;
+    }
   }
   &.portfolio-screen__project_background_sparklite-app{
     background-image: url("../../img/sparklite-app.png");
