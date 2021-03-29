@@ -1,0 +1,19 @@
+include __favorite/proposal__favorite.pug
+include __share/proposal__share.pug
+include __share-favorite/proposal__share-favorite.pug
+include __duration/proposal__duration.pug
+include __date/proposal__date.pug
+include __dates/proposal__dates.pug
+include __author-name/proposal__author-name.pug
+include __author-and-dates/proposal__author-and-dates.pug
+include __bottom/proposal__bottom.pug
+include __text/proposal__text.pug
+include __header/proposal__header.pug
+include __img/proposal__img.pug
+mixin proposal(modifier)
+  .proposal&attributes(attributes)
+    +proposal__img(modifier)
+    +proposal__header(modifier)
+    +proposal__text(modifier)
+    +proposal__bottom(modifier)
+    

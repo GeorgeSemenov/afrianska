@@ -1,0 +1,4 @@
+mixin proposal__text(modifier)
+  if modifier.text == undefined
+      - modifier.text = "some text here ... oops looks like you forgot";
+  p.proposal__text&attributes(attributes)!=modifier.text

@@ -1,0 +1,6 @@
+mixin proposals-container__proposals(modifier)
+  .proposals-container__proposals&attributes(attributes)
+    if modifier.proposalArr == undefined
+        - modifier.proposalArr = [{header:"Non quam tortor, proin eu egestas scelerisque purus.", text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", imgName:"pagoda"}];
+    each proposal in modifier.proposalArr
+      +proposal(proposal)(class="proposals-container__proposal")

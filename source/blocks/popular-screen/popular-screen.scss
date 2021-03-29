@@ -1,4 +1,13 @@
 @import '__search/popular-screen__search';
 @import '__proposal-container/popular-screen__proposal-container';
 @import '../search/search';
-.popular-screen {}
+@import '../proposals-container/proposals-container';
+.popular-screen {
+  @include blogpageFrames();
+  padding-top: 55px;
+  position: relative;
+
+  @media (max-width: $md - 1px){
+    padding-top: 25px;
+  }
+}

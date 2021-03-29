@@ -1,6 +1,11 @@
 /* no sense variables */
-$dark-faded: rgba(53, 110, 173, 0.2);
+$dark-fader: rgba(53, 110, 173, 0.2);
+
+$gray-dark-faded: rgba(0, 0, 0, 0.6); //#666666
+$gray-dark-fader: rgba(0, 0, 0, 0.4);
+$gray-faded: #798ca4;
 $gray: rgba(16, 112, 177, 0.2);
+$grayer: #F4F4F4;
 $transparent: transparent;
 
 $white: #fff;
@@ -28,7 +33,7 @@ $header__navigation_expanded--BGColor: $header--BGColor;
 
 $link--color: $white;
 $link--background-color: $blue-dark;
-$link__text--boxShadow: $dark-faded;
+$link__text--boxShadow: $dark-fader;
 
 $card__learn-text--color: $blue-dark;
 $card--background-color: $white;
@@ -51,3 +56,13 @@ $footer__item--color: $white;
 $footer__sign--color: $white;
 
 $page-title--color: $white;
+
+$search__input--color: $blue-light;
+$search__input--BGColor: $grayer;
+$search__input-placeholder--color: $gray-faded;
+
+$proposals-container__title--color: $blue;
+$proposal__header--color: $blue-light;
+$proposal__text--color: $gray-dark-faded;
+$proposal__author-name--color: $blue-light;
+$proposal__dates--color: $gray-dark-fader;

@@ -1,1 +1,6 @@
-.proposals-container {}
+@import '__proposals/proposals-container__proposals';
+@import '__title/proposals-container__title';
+@import '../proposal/proposal';
+.proposals-container {
+  padding-top: 55px;
+}

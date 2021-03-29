@@ -1,1 +1,5 @@
-.search {}
+@import '__magnifying_glass/search__magnifying_glass';
+@import '__input/search__input';
+.search {
+  position: relative;
+}

@@ -1,2 +1,9 @@
+include __proposals/proposals-container__proposals.pug
+include __title/proposals-container__title.pug
+include ../proposal/proposal.pug
 mixin proposals-container(modifier)
+  if modifier == undefined
+      - modifier = {};
   .proposals-container&attributes(attributes)
+    +proposals-container__title(modifier)
+    +proposals-container__proposals(modifier)

@@ -1,0 +1,22 @@
+.search__input {
+  width: 100%;
+  border: none;
+  background-color: $search__input--BGColor;
+  padding-top:  18px;
+  padding-bottom: 21px;
+  padding-left:   75px;
+  box-sizing: border-box;
+  font-family: 'gilroy' ,times , serif;
+  font-size: 16px;
+  line-height: 19px;
+  color: $search__input--color;
+  opacity: 0.6;
+  border-radius: 10px;
+  &::placeholder{
+    color: $search__input-placeholder--color;
+  }
+
+  @media (max-width: $md - 1px){
+      padding-left: 40px;
+  }
+}

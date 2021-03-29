@@ -1,4 +1,6 @@
 include ../search/search.pug
+include ../proposals-container/proposals-container.pug
 mixin popular-screen(modifier)
   .popular-screen&attributes(attributes)
     +search(modifier)(class="popular-screen__search")
+    +proposals-container(modifier)
