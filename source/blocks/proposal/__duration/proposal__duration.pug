@@ -1,2 +1,6 @@
 mixin proposal__duration(modifier)
-  .proposal__duration&attributes(attributes)
+  if modifier.timetoreadval == undefined
+      - modifier.timetoreadval = "T09:54";
+  if modifier.timetoread == undefined
+      - modifier.timetoread = "время не указанна";
+  time.proposal__duration(dateval=modifier.timetoreadval)&attributes(attributes)!=modifier.timetoread

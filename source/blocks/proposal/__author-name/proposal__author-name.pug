@@ -1,4 +1,4 @@
 mixin proposal__author-name(modifier)
   if modifier.authorName == undefined
       - modifier.authorName = "author unknown";
-  span.proposal__author-name&attributes(attributes)!=modifier.authorName
+  p.proposal__author-name&attributes(attributes)!=modifier.authorName

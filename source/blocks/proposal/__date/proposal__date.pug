@@ -1,2 +1,6 @@
 mixin proposal__date(modifier)
-  .proposal__date&attributes(attributes)
+  if modifier.dateval == undefined
+      - modifier.dateval = "2016-11-18";
+  if modifier.date == undefined
+      - modifier.date = "дата не указанна";
+  time.proposal__date(dateval=modifier.dateval)&attributes(attributes)!=modifier.date

@@ -1,1 +1,10 @@
-.proposal__bottom {}
+.proposal__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.proposal_theme_big-image {
+  .proposal__bottom {
+    width: 298px;
+  }
+}

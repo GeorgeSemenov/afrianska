@@ -1,5 +1,7 @@
-include __favorite/proposal__favorite.pug
-include __share/proposal__share.pug
+include __img-wrapper/proposal__img-wrapper.pug
+include __text-content/proposal__text-content.pug
+include ../../img/svg/bookmark.pug
+include ../../img/svg/share.pug
 include __share-favorite/proposal__share-favorite.pug
 include __duration/proposal__duration.pug
 include __date/proposal__date.pug
@@ -11,9 +13,10 @@ include __text/proposal__text.pug
 include __header/proposal__header.pug
 include __img/proposal__img.pug
 mixin proposal(modifier)
-  .proposal&attributes(attributes)
-    +proposal__img(modifier)
-    +proposal__header(modifier)
-    +proposal__text(modifier)
-    +proposal__bottom(modifier)
-    
+  if modifier == undefined
+      - modifier = {};
+  if modifier.modifier == undefined
+      - modifier.modifier = "";
+  .proposal(class=modifier.modifier)&attributes(attributes)
+    +proposal__img-wrapper(modifier)
+    +proposal__text-content(modifier)

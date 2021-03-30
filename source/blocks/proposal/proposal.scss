@@ -1,4 +1,6 @@
-@import '__favorite/proposal__favorite';
+@import '__img-wrapper/proposal__img-wrapper';
+@import '__text-content/proposal__text-content';
+@import '__bookmark/proposal__bookmark';
 @import '__share/proposal__share';
 @import '__share-favorite/proposal__share-favorite';
 @import '__duration/proposal__duration';
@@ -11,4 +13,20 @@
 @import '__header/proposal__header';
 @import '__img/proposal__img';
 @import '_theme_big-image/proposal_theme_big-image';
-.proposal {}
+.proposal {
+  max-width: 300px;
+
+  &.proposal_theme_big-image{
+    max-width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+/*
+timetoread
+timetoreadval
+dateval
+date
+authorName
+*/

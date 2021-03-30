@@ -1,0 +1,10 @@
+.proposal__img-wrapper {
+}
+.proposal_theme_big-image {
+  .proposal__img-wrapper{
+    flex-basis: 65%;
+    @media (max-width: $lg - 1px){
+      flex-basis: 100%;
+    }
+  }
+}
