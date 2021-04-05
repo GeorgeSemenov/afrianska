@@ -1,11 +1,15 @@
+@import '__see-all-link/popular-screen__see-all-link';
+@import '__see-all-link/popular-screen__see-all-link';
+@import '__title/popular-screen__title';
 @import '__search/popular-screen__search';
 @import '__proposal-container/popular-screen__proposal-container';
 @import '../search/search';
 @import '../proposals-container/proposals-container';
 .popular-screen {
-  @include blogpageFrames();
   padding-top: 55px;
   position: relative;
+  border-bottom: 1px solid $popular-screen--border-bottom-color;
+  margin-bottom: 55px;
 
   @media (max-width: $md - 1px){
     padding-top: 25px;

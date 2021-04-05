@@ -1,10 +1,17 @@
 .proposal__img-wrapper {
+  margin-bottom: 10px;
+  @media (max-width: $lg - 1px){
+    margin-bottom: 15px;
+  }
 }
 .proposal_theme_big-image {
   .proposal__img-wrapper{
-    flex-basis: 65%;
+    display: flex;
+    align-items: center;
+    flex-basis: 59%;
     @media (max-width: $lg - 1px){
       flex-basis: 100%;
+      margin-bottom: 15px;
     }
   }
 }

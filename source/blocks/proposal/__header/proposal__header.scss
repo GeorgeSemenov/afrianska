@@ -4,6 +4,9 @@
   line-height: 38px;
   letter-spacing: 0.04em;
   margin-bottom: 20px;
+  @media (max-width: $lg - 1px){
+    margin-bottom: 15px;
+  }
   color: $proposal__header--color;
 }
 .proposal_theme_big-image {
@@ -12,5 +15,9 @@
     line-height: 58px;
     margin-top: -7px;
     margin-bottom: 38px;
+    @media (max-width: $lg - 1px){
+      line-height: 45px;
+      margin-bottom: 15px;
+    }
   }
 }

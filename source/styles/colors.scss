@@ -3,6 +3,7 @@ $dark-fader: rgba(53, 110, 173, 0.2);
 
 $gray-dark-faded: rgba(0, 0, 0, 0.6); //#666666
 $gray-dark-fader: rgba(0, 0, 0, 0.4);
+$gray-dark-fadest: #cccccc;//rgba(0, 0, 0, 0.2)
 $gray-faded: #798ca4;
 $gray: rgba(16, 112, 177, 0.2);
 $grayer: #F4F4F4;
@@ -61,8 +62,12 @@ $search__input--color: $blue-light;
 $search__input--BGColor: $grayer;
 $search__input-placeholder--color: $gray-faded;
 
-$proposals-container__title--color: $blue;
 $proposal__header--color: $blue-light;
 $proposal__text--color: $gray-dark-faded;
 $proposal__author-name--color: $blue-light;
 $proposal__dates--color: $gray-dark-fader;
+
+$popular-screen__title--color: $blue;
+$popular-screen__see-all-link--color: $popular-screen__title--color;
+$popular-screen--border-bottom-color: $gray-dark-fadest;
+$articles-screen__title--color: $blue;

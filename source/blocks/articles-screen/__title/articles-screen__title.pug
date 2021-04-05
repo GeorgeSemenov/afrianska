@@ -1,0 +1,4 @@
+mixin articles-screen__title(modifier)
+  if modifier.header == undefined
+      - modifier.header = "ALL ARTICLE";
+  h2.articles-screen__title&attributes(attributes)!=modifier.header

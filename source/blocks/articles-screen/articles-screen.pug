@@ -1,0 +1,9 @@
+include __bottom/articles-screen__bottom.pug
+include __title/articles-screen__title.pug
+include ../proposals-container/proposals-container.pug
+mixin articles-screen(modifier)
+  if modifier == undefined
+      - modifier ={};
+  .articles-screen&attributes(attributes)
+    +articles-screen__title(modifier)
+    +proposals-container(modifier)(class="articles-screen__proposals-container")

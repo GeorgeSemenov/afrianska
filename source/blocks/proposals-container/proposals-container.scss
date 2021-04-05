@@ -1,6 +1,10 @@
-@import '__proposals/proposals-container__proposals';
-@import '__title/proposals-container__title';
+@import '__proposal/proposals-container__proposal';
 @import '../proposal/proposal';
 .proposals-container {
-  padding-top: 55px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @media (max-width: 1366px - 1px){
+    justify-content: space-around;
+  }
 }

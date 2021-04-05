@@ -1,3 +1,4 @@
+@import '_theme_horizontal/proposal_theme_horizontal';
 @import '__img-wrapper/proposal__img-wrapper';
 @import '__text-content/proposal__text-content';
 @import '__bookmark/proposal__bookmark';
@@ -20,6 +21,9 @@
     max-width: 100%;
     display: flex;
     flex-direction: row-reverse;
+    @media (max-width: $lg - 1px){
+      flex-direction: column;
+    }
   }
 }
 

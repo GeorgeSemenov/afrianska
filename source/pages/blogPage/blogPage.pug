@@ -2,6 +2,7 @@ include ../../blocks/header/header.pug
 include ../../blocks/zaglushambo/zaglushambo.pug
 include ../../blocks/page-title/page-title.pug
 include ../../blocks/popular-screen/popular-screen.pug
+include ../../blocks/articles-screen/articles-screen.pug
 include ../../blocks/footer/footer.pug
 doctype html
 html(lang="ru")
@@ -36,5 +37,51 @@ html(lang="ru")
       header:"Blog Afrianska",
       description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     })    
-    +popular-screen({})
+    +popular-screen({
+      header:"POPULAR",
+      proposalArr : [
+        {
+          header:"Feugiat sodales at nullam tellus.", 
+          text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi posuere nibh tempor fringilla porta pellentesque ipsum.", 
+          imgName:"home_blue_sky", 
+          authorName: "Samatha Leuthex", 
+          date:"May 5,", 
+          dateval: "2021-05-05", 
+          timetoread:"3 min read", 
+          timetoreadval: "00:03",
+          modifier:"proposal_theme_big-image"
+        },
+        {
+          header:"Porta proin tellus sed pulvinar odio eu pulvinar.",
+          text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ", 
+          imgName:"pencil_and_ruller", 
+          authorName: "Samatha Leuthex", 
+          date:"May 5,", 
+          dateval: "2021-05-05", 
+          timetoread:"3 min read", 
+          timetoreadval: "00:03"
+        },
+        {
+          header:"Non quam tortor, proin eu egestas scelerisque purus.",
+          text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
+          imgName:"pagoda", 
+          authorName: "Samatha Leuthex", 
+          date:"May 5,", 
+          dateval: "2021-05-05", 
+          timetoread:"3 min read", 
+          timetoreadval: "00:03"
+        },
+        {
+          header:"Amet amet sed pharetra risus sit eget interdum.",
+          text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ", 
+          imgName:"laptops", 
+          authorName: "Samatha Leuthex", 
+          date:"May 5,", 
+          dateval: "2021-05-05", 
+          timetoread:"3 min read", 
+          timetoreadval: "00:03"
+        }
+      ]
+    })(class="main-content-frames")
+    +articles-screen({})(class="main-content-frames")
     +footer({})

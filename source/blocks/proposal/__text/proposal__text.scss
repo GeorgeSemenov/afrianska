@@ -5,9 +5,15 @@
   letter-spacing: 0.04em;
   color: $proposal__text--color;
   margin-bottom: 14px;
+  @media (max-width: $lg - 1px){
+    margin-bottom: 15px;
+  }
 }
 .proposal_theme_big-image {
   .proposal__text {
     margin-bottom: 50px;
+    @media (max-width: $lg - 1px){
+      margin-bottom: 15px;
+    }
   }
 }

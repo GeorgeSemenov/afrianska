@@ -22,3 +22,8 @@ html{
     font-size: 8px;
   }
 }
+
+.main-content-frames{
+  @include mx(auto);
+  max-width: 940px;
+}
