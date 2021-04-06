@@ -1,0 +1,4 @@
+mixin cards-screen__header(modifier)
+  if modifier.header == undefined
+      - modifier.header = "Empty header here";
+  h2.cards-screen__header&attributes(attributes)!=modifier.header

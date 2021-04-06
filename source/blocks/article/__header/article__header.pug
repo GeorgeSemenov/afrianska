@@ -1,5 +1,7 @@
 mixin article__header(modifier)
   if modifier._isMainScreen
     h1.article__header&attributes(attributes)!=modifier.header
+  else if modifier._isSecondScreen
+    h2.article__header&attributes(attributes)!=modifier.header
   else
     h3.article__header&attributes(attributes)!=modifier.header

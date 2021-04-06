@@ -31,63 +31,64 @@ html(lang="ru")
     +header({
       navigationAr: ['home', 'blog', 'contact us']
     })
-    +main-screen({
-      article:{
-        header:"New Automation <br/>Tool for Your Home",
-        text:"Lorem iposum dolor sit amet, consectetur adipiscing elit. Faucibus tristique vulputate ultrices ut mauris tellus at. Posuere sollicitudin adio tellus elit."
-      },
-      link:{
-        text:"See Our Projects"
-      }
-    })
-    +cards-screen({
-      header: 'What we do to help our client grow in digital era,',
-      cardsArr:[
-        {
-          imgName:'newspaper',
-          header: 'Make Your buisiness To Be Better Famous In Internet',
-          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-          modificator:'card_position-img_left'
+    main
+      +main-screen({
+        article:{
+          header:"New Automation <br/>Tool for Your Home",
+          text:"Lorem iposum dolor sit amet, consectetur adipiscing elit. Faucibus tristique vulputate ultrices ut mauris tellus at. Posuere sollicitudin adio tellus elit."
         },
-        {
-          imgName:'multifunction',
-          header: 'Bring Technology To Your Comfortable Home',
-          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
-        },
-        {
-          imgName:'lady',
-          header: 'Build Your Digital Product That Suitable For Your Need',
-          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
-        },
-      ]
-    })
-    +portfolio-screen({
-      screen_header: "Our Finished Project",
-      screen_description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-      projectsArr: [
-        {
-          isRow: false,
-          modifier: "portfolio-screen__project_theme_big portfolio-screen__project_background_smart-house",
-          project_header: "Smart Home Installation",
-          project_text: "In Muarakana Housing Estate"
-        },
-        {
-          isRow: true,
-          projects_in_rowArr: [
-            {
-              modifier: "portfolio-screen__project_background_sparklite-app",
-              project_header: "Sparklite App",
-              project_text: "Marketplace"
-            },
-            {
-              modifier: "portfolio-screen__project_background_car-rapetition-app",
-              project_header: "Car-Rapetition App",
-              project_text: "Board"
-            }
-          ]
+        link:{
+          text:"See Our Projects"
         }
-      ]
-    })
+      })
+      +cards-screen({
+        header: 'What we do to help our client grow in digital era,',
+        cardsArr:[
+          {
+            imgName:'newspaper',
+            header: 'Make Your buisiness To Be Better Famous In Internet',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+            modificator:'card_position-img_left'
+          },
+          {
+            imgName:'multifunction',
+            header: 'Bring Technology To Your Comfortable Home',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
+          },
+          {
+            imgName:'lady',
+            header: 'Build Your Digital Product That Suitable For Your Need',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
+          },
+        ]
+      })
+      +portfolio-screen({
+        screen_header: "Our Finished Project",
+        screen_description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        projectsArr: [
+          {
+            isRow: false,
+            modifier: "portfolio-screen__project_theme_big portfolio-screen__project_background_smart-house",
+            project_header: "Smart Home Installation",
+            project_text: "In Muarakana Housing Estate"
+          },
+          {
+            isRow: true,
+            projects_in_rowArr: [
+              {
+                modifier: "portfolio-screen__project_background_sparklite-app",
+                project_header: "Sparklite App",
+                project_text: "Marketplace"
+              },
+              {
+                modifier: "portfolio-screen__project_background_car-rapetition-app",
+                project_header: "Car-Rapetition App",
+                project_text: "Board"
+              }
+            ]
+          }
+        ]
+      })
     +our-clients-screen({
       screen_header: "Our Beloved Client",
       screen_description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",

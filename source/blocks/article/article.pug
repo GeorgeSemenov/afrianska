@@ -4,8 +4,12 @@ mixin article(modifier)
   .article&attributes(attributes)
     if attributes.class == undefined
         - attributes.class = "";
-    if (attributes.class.indexOf('article_theme_topic')==-1)
+    if ( !(attributes.class.indexOf('article_theme_main-screen')==-1) ) 
       - modifier._isMainScreen = true;
+    else 
+      - modifier._isMainScreen = false
+    if ( !(attributes.class.indexOf('article_theme_screen-header')==-1) ) 
+      - modifier._isSecondScreen = true;
     else 
       - modifier._isMainScreen = false
     +article__header(modifier)

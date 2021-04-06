@@ -2,7 +2,7 @@
   @include px(5px);
   @include py(20px);
   @include unselectable();
-  font-family: 'gilroy' ,times , serif;
+  font-family: 'Gilroy' ,"Times" , "Serif";
   font-size: 1.65rem;
   text-decoration: none;
   box-shadow: 5px 10px 20px $link__text--boxShadow;

@@ -1,0 +1,19 @@
+.cards-screen__header {
+  font-family: 'Gilroy' ,"Times" , "Serif";
+  font-size: 36px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  color: $cards-screen__header--color;
+
+  position: absolute;
+  top: 192px;
+  left: 210px;
+  width: 370px;
+  @media (max-width: $xl - 1px){
+    left: 120px;
+    position: static;
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}

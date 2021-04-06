@@ -1,5 +1,4 @@
 mixin main-screen__topic-wrapper(modifier)
   .main-screen__topic-wrapper&attributes(attributes)
-    +article(Object.assign({},{text: modifier.article.text, header:modifier.article.header}))(class="main-screen__article")
+    +article(Object.assign({},{text: modifier.article.text, header:modifier.article.header}))(class="main-screen__article article_theme_main-screen")
     +link(modifier)(class='main-screen__link' data-screen-to-go="about")
-    +article(modifier)(class="article_theme_topic")

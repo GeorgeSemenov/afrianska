@@ -1,3 +1,4 @@
+@import '_theme_main-screen/article_theme_main-screen';
 @import '_theme_common-style/article_theme_common-style';
 @import '_theme_light/article_theme_light';
 @import '_text-align_left/article_text-align_left';
@@ -8,19 +9,13 @@
 @import '_font_blue-light/article_font_blue-light';
 @import '_font_middle/article_font_middle';
 @import '_font_gilroy/article_font_gilroy';
-@import '_theme_topic/article_theme_topic';
 @import '__text/article__text';
 @import '__header/article__header';
 .article {
-  font-family: 'galien' ,times , serif;
-
-  &.article_theme_topic{
-    font-family: 'gilroy' ,times , serif;
-    color: $article_theme_topic--color;
-  }
+  font-family: 'Galien' ,"Georgia" , "Serif";
 
   &.article_font_gilroy {
-    font-family: 'gilroy' ,times , serif;
+    font-family: 'Gilroy' ,"Times" , "Serif";
   }
 
   &.article_font_blue-light{
@@ -28,7 +23,7 @@
   }
 
   &.article_theme_screen-header{
-    font-family: 'gilroy' ,times , serif;
+    font-family: 'Gilroy' ,"Times" , "Serif";
     color: $article_theme_screen-header--color;
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -39,7 +34,7 @@
   }
 
   &.article_theme_project-style{
-    font-family: 'gilroy' ,times , serif;
+    font-family: 'Gilroy' ,"Times" , "Serif";
     letter-spacing: 0.05em;
   }
   &.article_theme_light{

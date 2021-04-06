@@ -4,8 +4,9 @@
   text-decoration: none;
   cursor: pointer;
   color: $card__learn-text--color;
-  font-family: 'gilroy' ,times , serif;
+  font-family: 'Gilroy' ,"Times" , "Serif";
   font-size: 15.5px;
+  align-self: flex-start;
 
   &:hover{
     /*это состояние влияет на следующие классы:
