@@ -1,3 +1,6 @@
 mixin footer__item-container(modifier)
-  li.footer__item-container&attributes(attributes)
-    +footer__item(modifier)
+  if modifier._isTitle
+    h3.footer__item-container&attributes(attributes)!=modifier.header
+  else
+    li.footer__item-container&attributes(attributes)
+      +footer__item(modifier)

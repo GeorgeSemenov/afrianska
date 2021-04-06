@@ -1,6 +1,4 @@
 .our-clients-screen__content {
-  @include mx(auto);
-  width: 69%;
   margin-bottom: 123px;
   @media (max-width: $lg - 1px){
     width: 90%;

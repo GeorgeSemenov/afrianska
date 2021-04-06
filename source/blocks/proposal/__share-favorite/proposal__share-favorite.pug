@@ -1,4 +1,4 @@
 mixin proposal__share-favorite(modifier)
   .proposal__share-favorite&attributes(attributes)
-    +bookmark(modifier)(class="proposal__bookmark")
-    +share(modifier)(class="proposal__share")
+    +bookmark(modifier)(class="proposal__bookmark" aria-label="bookmark button")
+    +share(modifier)(class="proposal__share" aria-label="share button")

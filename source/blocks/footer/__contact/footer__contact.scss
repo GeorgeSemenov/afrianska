@@ -6,4 +6,20 @@
   letter-spacing: 0.05em;
   color: $footer__contact--color;
   margin-bottom: 21px;
+  &:last-child{margin-bottom:  0px;}
+  &:before{
+    margin-right:20px;
+  }
+  &:nth-child(1):before{
+    content: 'A.';
+  }
+  &:nth-child(2):before{
+    content: 'T.';
+  }
+  &:nth-child(3):before{
+    content: 'E.';
+  }
+  @media (max-width: $lg - 1px){
+    margin-bottom: 10px;
+  }
 }

@@ -1,1 +1,6 @@
-.footer__cText {}
+.footer__cText {
+  &:nth-child(2){
+    content: 'A.';
+    border: 5px solid red;
+  }
+}

@@ -1,4 +1,7 @@
 .footer__label {
   display: inline-flex;
   margin-bottom: 37px;
+  @media (max-width: $lg - 1px){
+    margin-bottom:  20px;
+  }
 }
