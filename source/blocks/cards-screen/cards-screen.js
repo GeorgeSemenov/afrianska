@@ -20,7 +20,8 @@ $(document).ready(function(){
       spaceBetween: 15,
       pagination: {
         el: '.cards-screen__pagination',
-        clickable: true
+        clickable: true,
+        bulletElement: 'button'
       },
       autoplay: {
         delay: 3500,

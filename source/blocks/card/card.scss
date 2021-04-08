@@ -1,10 +1,11 @@
+@import '__description/card__description';
+@import '__header/card__header';
 @import '_position-img_left/card_position-img_left';
 @import '__learn-arrow/card__learn-arrow';
 @import '__learn-text/card__learn-text';
 @import '__next-block/card__next-block';
 @import '__article/card__article';
 @import '__img/card__img';
-@import '../article/article';
 $card-width: 380px;//От этого показателя будет зависить padding-X
 .card {
   @include px($card-width*0.12);
@@ -15,6 +16,8 @@ $card-width: 380px;//От этого показателя будет завис�
   background-color: $card--background-color;
   box-shadow: 5px 20px 50px $card--shadow-color;
   border-radius: 10px;
+  font-family: 'Gilroy' ,"Times" , "Serif";
+  color: $card--color;
 
   @media (max-width: $lg - 1px){
     @include px(15px);

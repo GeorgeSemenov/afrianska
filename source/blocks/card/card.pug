@@ -1,11 +1,13 @@
+include __header/card__header.pug
+include __description/card__description.pug
 include __learn-arrow/card__learn-arrow.pug
 include __learn-text/card__learn-text.pug
 include __next-block/card__next-block.pug
 include __img/card__img.pug
-include ../article/article.pug
 include ../../img/svg/arrow.pug
 mixin card(modifier)
   .card&attributes(attributes)
     +card__img(modifier)
-    +article(modifier)(class="card__article article_font_middle article_font_gilroy article_font_blue-light article_text_faded article_const_font")
+    +card__header(modifier)
+    +card__description(modifier)
     +card__next-block(modifier)
