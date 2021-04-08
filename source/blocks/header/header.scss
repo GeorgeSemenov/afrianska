@@ -11,7 +11,8 @@
 .header {
   display: flex;
   align-items: flex-end;
-  @include py(48px);
+  padding-top: 48px;
+  padding-bottom: 0;
   padding-left: 83px;
   padding-right: 86px;
   background-color: $header--BGColor;

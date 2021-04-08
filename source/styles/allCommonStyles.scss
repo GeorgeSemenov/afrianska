@@ -23,6 +23,10 @@ html{
   }
 }
 
+body{
+  padding-top: 88px;
+}
+
 .main-content-frames{
   @include mx(auto);
   max-width: 940px;

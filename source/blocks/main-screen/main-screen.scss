@@ -7,13 +7,11 @@
 .main-screen {
   background: linear-gradient(0deg, rgba(152, 195, 232, 0.2) 8.84%, rgba(152, 195, 232, 0.04) 31.12%);
   height: 685px;
-  padding-top: 6%;
 
   @media (max-width: $lg - 1px){
     padding-bottom: 15%;
     height: auto;
   }
   @media (max-width: $md - 1px){
-    padding-top: 15px;
   }
 }
