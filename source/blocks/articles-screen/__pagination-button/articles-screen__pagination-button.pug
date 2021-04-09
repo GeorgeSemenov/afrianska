@@ -1,0 +1,9 @@
+mixin articles-screen__pagination-button(modifier)
+    if ( !(attributes.class.indexOf('articles-screen__pagination-button_previous')==-1) ) 
+      if modifier[_pagination-button-text] == undefined
+        - modifier[_pagination-button-text] = "Old Post";
+    if ( !(attributes.class.indexOf('articles-screen__pagination-button_next')==-1)) 
+      if modifier[_pagination-button-text] == undefined
+        - modifier[_pagination-button-text] = "New Post";
+    button.articles-screen__pagination-button&attributes(attributes)!=modifier[_pagination-button-text]
+      //- Значения текста кнопок распределяются на один элемент выше в articles-screen__bottom

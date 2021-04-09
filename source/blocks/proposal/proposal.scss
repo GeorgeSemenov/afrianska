@@ -1,3 +1,4 @@
+@import '_theme_article/proposal_theme_article';
 @import '_theme_horizontal/proposal_theme_horizontal';
 @import '__img-wrapper/proposal__img-wrapper';
 @import '__text-content/proposal__text-content';
@@ -16,6 +17,8 @@
 @import '_theme_big-image/proposal_theme_big-image';
 .proposal {
   max-width: 300px;
+  @media (max-width: $sm - 1px){
+  }
 
   &.proposal_theme_big-image{
     max-width: 100%;
@@ -23,6 +26,13 @@
     flex-direction: row-reverse;
     @media (max-width: $lg - 1px){
       flex-direction: column;
+    }
+  }
+  &.proposal_theme_article{
+    display: flex;
+    max-width: none;
+    @media (max-width: $sm - 1px){
+      display: block;
     }
   }
 }

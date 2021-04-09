@@ -1,2 +1,4 @@
 mixin articles-screen__bottom(modifier)
   .articles-screen__bottom&attributes(attributes)
+    +articles-screen__pagination-button(Object.assign({},{"_pagination-button-text":modifier[pagination-previous-button-text]}))(class="articles-screen__pagination-button_previous")
+    +articles-screen__pagination-button(Object.assign({},{"_pagination-button-text":modifier[pagination-next-button-text]}))(class="articles-screen__pagination-button_next")

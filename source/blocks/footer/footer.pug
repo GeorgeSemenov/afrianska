@@ -1,3 +1,4 @@
+include __content/footer__content.pug
 include __sign/footer__sign.pug
 include __item-container/footer__item-container.pug
 include __lists/footer__lists.pug
@@ -20,6 +21,4 @@ include ../link/link.pug
 include ../logo/logo.pug
 mixin footer(modifier)
   footer.footer&attributes(attributes)
-    +footer__topic(modifier)
-    +footer__dividing-line(modifier)
-    +footer__bottom(modifier)
+    +footer__content(modifier)

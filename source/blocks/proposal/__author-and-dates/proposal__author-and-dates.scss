@@ -4,3 +4,12 @@
   line-height: 24px;
   letter-spacing: 0.04em;
 }
+
+.proposal_theme_article {
+  .proposal__author-and-dates{
+    margin-right: 101px;
+    @media (max-width: $sm - 1px){
+      margin-right: 0px;
+    }
+  }
+}

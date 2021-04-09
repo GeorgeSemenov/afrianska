@@ -48,7 +48,8 @@ $our-clients-screen__client-logo-container--borderColor: $white-faded;
 $our-clients-screen__more-client-link--color: $white;
 $our-clients-screen__more-client-link-hover--BGColor: $gray;
 
-$footer--BGColor: $blue-darker;
+$footer--BGColor: $blue-dark;
+$footer__content--BGColor: $blue-darker;
 $footer__header--color: $white;
 $footer__text--color: $footer__header--color;
 $footer__dividing-line: $blue-dark;
@@ -71,4 +72,8 @@ $proposal__dates--color: $gray-dark-fader;
 $popular-screen__title--color: $blue;
 $popular-screen__see-all-link--color: $popular-screen__title--color;
 $popular-screen--border-bottom-color: $gray-dark-fadest;
+
 $articles-screen__title--color: $blue;
+$articles-screen__pagination-button--color: $blue ;
+$articles-screen__pagination-button-hover--color: $blue-dark ;
+$articles-screen__pagination-button-active--color: $blue-less-darker;

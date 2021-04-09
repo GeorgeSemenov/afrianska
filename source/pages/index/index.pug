@@ -3,6 +3,7 @@ include ../../blocks/main-screen/main-screen.pug
 include ../../blocks/cards-screen/cards-screen.pug
 include ../../blocks/portfolio-screen/portfolio-screen.pug
 include ../../blocks/our-clients-screen/our-clients-screen.pug
+include ../../blocks/footer/footer.pug
 doctype html
 html(lang="ru")
   head
@@ -89,11 +90,12 @@ html(lang="ru")
           }
         ]
       })(class="main-content-frames")
-    +our-clients-screen({
-      screen_header: "Our Beloved Client",
-      screen_description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-      clientLogosArr: ['logo-1','logo-2','logo-3','logo-4','logo-5','logo-6','logo-7'],
-      footer_header: "Intersted to work with our team? ",
-      footer_text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-      buttonText: "Let’s Talk",
-    })
+      +our-clients-screen({
+        screen_header: "Our Beloved Client",
+        screen_description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        clientLogosArr: ['logo-1','logo-2','logo-3','logo-4','logo-5','logo-6','logo-7'],
+        footer_header: "Intersted to work with our team? ",
+        footer_text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        buttonText: "Let’s Talk",
+      })
+    +footer({})

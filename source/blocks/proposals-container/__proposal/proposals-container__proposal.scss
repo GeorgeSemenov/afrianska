@@ -1,3 +1,9 @@
 .proposals-container__proposal {
   margin-bottom: 24px;
 }
+
+.proposals-container_theme_article-container{
+  .proposals-container__proposal {
+    margin-bottom: 22px;
+  }
+}

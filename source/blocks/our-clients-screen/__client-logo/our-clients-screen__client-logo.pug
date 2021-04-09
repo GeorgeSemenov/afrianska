@@ -2,8 +2,8 @@ mixin our-clients-screen__client-logo(modifier)
   picture.our-clients-screen__client-logo&attributes(attributes)
     case modifier
       when "logo-1"
-        source(type='image/webp' srcset=require('../../img/client_logos/logo_client_1-mobile.png') media="(max-width: 600px)")
-        img(src=require('../../img/client_logos/logo_client_1.png') alt="logo-1")
+        source(type='image/webp' srcset=require('../../img/client_logos/logo_client_1-mobile.png') media="(max-width: 600px)" width="115" height="63")
+        img(src=require('../../img/client_logos/logo_client_1.png') alt="logo-1" width="235" height="128")
       when "logo-2"
         source(type='image/webp' srcset=require('../../img/client_logos/logo_client_2-mobile.png') media="(max-width: 600px)")
         img(src=require('../../img/client_logos/logo_client_2.png') alt="logo-2")

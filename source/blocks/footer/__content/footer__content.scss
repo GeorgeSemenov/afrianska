@@ -1,0 +1,14 @@
+.footer__content {
+  background-color: $footer__content--BGColor;
+  border-radius: 0 200px 0 0;
+  padding-top: 6.5%;
+  margin-right: 7%;
+  position: relative;
+  @media (max-width: $md - 1px){
+    border-radius: 0 140px 0 0;
+  }
+  @media (max-width: $sm - 1px){
+    margin-right: 0px;
+    border-radius: 0 100px 0 0;
+  }
+}

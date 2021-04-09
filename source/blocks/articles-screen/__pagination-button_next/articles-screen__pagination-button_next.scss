@@ -1,0 +1,8 @@
+.articles-screen__pagination-button_next {
+  &:before{
+    display: block;
+    content: '';
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 0L4.94 1.06L9.13 5.25H0V6.75H9.13L4.94 10.94L6 12L12 6L6 0Z' fill='%23356EAD'/%3E%3C/svg%3E%0A");
+    @include square(12px);
+  }
+}

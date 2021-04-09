@@ -1,0 +1,13 @@
+.articles-screen__pagination-button {
+  font-family: 'Gilroy' ,"Times" , "Serif";
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  color: $articles-screen__pagination-button--color;
+  &:hover{
+    color: $articles-screen__pagination-button-hover--color;
+  }
+  &:active{
+    color: $articles-screen__pagination-button-active--color;
+  }
+}

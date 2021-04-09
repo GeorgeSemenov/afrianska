@@ -1,1 +1,4 @@
-.articles-screen__bottom {}
+.articles-screen__bottom {
+  display: flex;
+  justify-content: space-between;
+}

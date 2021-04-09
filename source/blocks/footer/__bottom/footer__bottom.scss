@@ -1,10 +1,10 @@
 .footer__bottom {
   @include content-frames();
-  padding-top: 102px;
+  padding-top: 96px;
+  padding-bottom: 85px;
   display: grid;
-  grid-template-columns: 29% 1fr;
-  grid-row-gap: 45px;
-  padding-bottom: 65px;
+  grid-template-columns: 32% 1fr;
+  grid-row-gap: 69px;
 
   @media (max-width: $lg - 1px){
     grid-template-columns: 1fr;

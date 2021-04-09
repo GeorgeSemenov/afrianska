@@ -1,15 +1,14 @@
+@import '__content/footer__content';
 @import '__sign/footer__sign';
 @import '__item-container/footer__item-container';
 @import '__lists/footer__lists';
 @mixin content-frames(){
-  padding-left: 16.8%;
-  padding-right: 11.5%;
+  box-sizing: border-box;
+  max-width: 910px;
+  padding-left: 35px;
+  @include mx(auto);
   @media (max-width: $lg - 1px){
-    @include px(10%);
-  }
-  @media (max-width: $md - 1px){
-    padding-left: 5%;
-    padding-right: 5%;
+    @include px(15px);
   }
 }
 @import '__logo/footer__logo';
@@ -35,15 +34,4 @@
 
 .footer {
   background-color: $footer--BGColor;
-  border-radius: 0 200px 0 0;
-  padding-top: 6.5%;
-  margin-right: 7%;
-  position: relative;
-  @media (max-width: $md - 1px){
-    border-radius: 0 140px 0 0;
-  }
-  @media (max-width: $sm - 1px){
-    margin-right: 0px;
-    border-radius: 0 100px 0 0;
-  }
 }

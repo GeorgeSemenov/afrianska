@@ -3,6 +3,10 @@
   @media (max-width: $lg - 1px){
     margin-bottom: 15px;
   }
+  img{
+    max-width: 100%;
+    @include mx(auto);
+  }
 }
 .proposal_theme_big-image {
   .proposal__img-wrapper{
@@ -12,6 +16,16 @@
     @media (max-width: $lg - 1px){
       flex-basis: 100%;
       margin-bottom: 15px;
+    }
+  }
+}
+
+.proposal_theme_article {
+  .proposal__img-wrapper{
+    margin-right: 15px;
+
+    @media (max-width: $sm - 1px){
+      margin-right: 0px;
     }
   }
 }

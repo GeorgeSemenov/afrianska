@@ -2,9 +2,9 @@ mixin card__img(modifier)
   picture.card__img&attributes(attributes)
     case modifier.imgName 
       when 'multifunction'
-        img(src=require('../../img/multifunction.png') alt="multifunction")
+        img(src=require('../../img/multifunction.png') alt="multifunction" width='255' height='208')
       when 'newspaper'
-        img(src=require('../../img/newspaper.png') alt="newspaper")
+        img(src=require('../../img/newspaper.png') alt="newspaper" width='192' height='132')
       when 'lady'
-        img(src=require('../../img/lady.png') alt="lady")
+        img(src=require('../../img/lady.png') alt="lady" width='171' height='132')
         

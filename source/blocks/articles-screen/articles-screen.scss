@@ -1,5 +1,12 @@
+@import '__pagination-button_previous/articles-screen__pagination-button_previous';
+@import '__pagination-button_next/articles-screen__pagination-button_next';
+@import '__pagination-button/articles-screen__pagination-button';
 @import '__bottom/articles-screen__bottom';
 @import '__title/articles-screen__title';
 @import '../proposals-container/proposals-container';
 @import '__proposal-container/articles-screen__proposal-container';
-.articles-screen {}
+.articles-screen {
+  @media (max-width: $lg - 1px){
+    @include px(15px);
+  }
+}

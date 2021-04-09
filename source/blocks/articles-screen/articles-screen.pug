@@ -1,3 +1,4 @@
+include __pagination-button/articles-screen__pagination-button.pug
 include __bottom/articles-screen__bottom.pug
 include __title/articles-screen__title.pug
 include ../proposals-container/proposals-container.pug
@@ -5,5 +6,9 @@ mixin articles-screen(modifier)
   if modifier == undefined
       - modifier ={};
   .articles-screen&attributes(attributes)
+    if modifier.proposalArr == undefined
+        - modifier.proposalArr = [{header:"Massa eu in laoreet enim augue vulputate nunc.", text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.", imgName:"rubber", authorName: "Samatha Leuthex", date:"May 5,", dateval: "2021-05-05", timetoread:"3 min read",modifier:"proposal_theme_article"}];
+
     +articles-screen__title(modifier)
-    +proposals-container(modifier)(class="articles-screen__proposals-container")
+    +proposals-container(modifier)(class="articles-screen__proposals-container proposals-container_theme_article-container")
+    +articles-screen__bottom(modifier)

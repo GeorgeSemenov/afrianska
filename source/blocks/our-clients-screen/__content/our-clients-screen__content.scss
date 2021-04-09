@@ -1,11 +1,11 @@
 .our-clients-screen__content {
-  margin-bottom: 123px;
+  padding-bottom: 123px;
   @media (max-width: $lg - 1px){
     width: 90%;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
   }
   @media (max-width: $md - 1px){
-    margin-bottom: 25px;
+    padding-bottom: 25px;
     width: 100%;
   }
 }

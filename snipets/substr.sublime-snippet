@@ -1,9 +1,10 @@
 <snippet>
   <content><![CDATA[
-Object.assign({},{${1:property}:modifier.${2:${1:property}}, ${3:} })
+if ( !(${1:attributes}.class.indexOf('${2:someClassHere}')==-1) ) 
+  - modifier.${3:someProperty} = ${4:true};
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>ass</tabTrigger>
+  <tabTrigger>subs</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <!-- <scope>source.python</scope> -->
 </snippet>
