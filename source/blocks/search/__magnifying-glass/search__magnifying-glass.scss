@@ -1,1 +1,9 @@
-.search__magnifying-glass {}
+.search__magnifying-glass {
+  position: absolute;
+  left: 29px;
+  top: 50%;
+  transform: translateY(-50%);
+  @media (max-width: $md - 1px){
+    left: 15px;
+  }
+}
