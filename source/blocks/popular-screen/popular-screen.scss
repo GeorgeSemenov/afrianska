@@ -1,4 +1,4 @@
-@import '__see-all-link/popular-screen__see-all-link';
+@import '__bottom-block-line/popular-screen__bottom-block-line';
 @import '__see-all-link/popular-screen__see-all-link';
 @import '__title/popular-screen__title';
 @import '__search/popular-screen__search';
@@ -8,13 +8,13 @@
 .popular-screen {
   padding-top: 55px;
   position: relative;
-  border-bottom: 1px solid $popular-screen--border-bottom-color;
+  // border-bottom: 1px solid $popular-screen--border-bottom-color;
   margin-bottom: 55px;
 
+  @media (max-width: $lg - 1px) {
+    @include px(15px);
+  }
   @media (max-width: $md - 1px){
     padding-top: 25px;
-  }
-  @media (max-width: $sm - 1px){
-    @include px(15px);
   }
 }

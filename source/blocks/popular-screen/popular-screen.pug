@@ -1,3 +1,4 @@
+include __bottom-block-line/popular-screen__bottom-block-line.pug
 include __see-all-link/popular-screen__see-all-link.pug
 include __see-all-link/popular-screen__see-all-link.pug
 include __title/popular-screen__title.pug
@@ -9,3 +10,4 @@ mixin popular-screen(modifier)
     +popular-screen__title(modifier)
     +proposals-container(modifier)(class="popular-screen__proposal-container")
     +popular-screen__see-all-link(modifier)
+    +popular-screen__bottom-block-line(modifier)

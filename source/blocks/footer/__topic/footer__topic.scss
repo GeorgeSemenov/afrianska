@@ -1,13 +1,11 @@
 .footer__topic {
   @include content-frames();
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   padding-bottom: 97px;
 
   @media (max-width: $md - 1px){
+    flex-direction: column;
     text-align: center;
-    grid-template-columns: 1fr;
-    grid-row-gap: 20px;
     padding-bottom: 45px;
   }
 }

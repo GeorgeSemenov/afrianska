@@ -1,1 +1,7 @@
-.footer__text-container {}
+.footer__text-container {
+  max-width: 452px;
+  @media (max-width: $md - 1px) {
+    max-width: none;
+    margin-bottom: 20px;
+  }
+}

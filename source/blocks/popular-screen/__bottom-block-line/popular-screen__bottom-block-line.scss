@@ -1,0 +1,10 @@
+.popular-screen__bottom-block-line {
+  height: 1px;
+  width: 100%;
+  background-color: $popular-screen__bottom-block-line--BG;
+  position: absolute;
+  @include centeredX();
+  @media (max-width: $lg - 1px) {
+    width: 80%;
+  }
+}

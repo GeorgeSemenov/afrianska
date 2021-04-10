@@ -1,3 +1,4 @@
+@import '_bg_blue/footer_bg_blue';
 @import '__content/footer__content';
 @import '__sign/footer__sign';
 @import '__item-container/footer__item-container';
@@ -32,6 +33,6 @@
 @import '../article/article';
 @import '../link/link';
 
-.footer {
+.footer.footer_bg_blue {
   background-color: $footer--BGColor;
 }
