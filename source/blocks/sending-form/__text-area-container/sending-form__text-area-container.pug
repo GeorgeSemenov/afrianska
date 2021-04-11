@@ -1,0 +1,10 @@
+mixin sending-form__text-area-container(modifier)
+  .sending-form__text-area-container&attributes(attributes)
+    if modifier == undefined
+        - modifier = {};
+    if modifier["text-area-id"] == undefined
+        - modifier["text-area-id"] = 'text-area-id';
+    if modifier["text-area-name"] == undefined
+        - modifier["text-area-name"] = 'text-area-name';
+    +sending-form__label(modifier)(for=modifier["text-area-id"])
+    +sending-form__text-area(modifier)(id=modifier["text-area-id"] name=modifier["text-area-name"])

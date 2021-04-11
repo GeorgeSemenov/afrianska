@@ -1,0 +1,9 @@
+/* общие стили */
+@import "../../styles/allCommonStyles";
+
+/* Стили блоков */
+@import '../../blocks/header/header';
+@import '../../blocks/zaglushambo/zaglushambo';
+@import '../../blocks/page-title/page-title';
+@import '../../blocks/contact-us-screen/contact-us-screen';
+@import '../../blocks/footer/footer';

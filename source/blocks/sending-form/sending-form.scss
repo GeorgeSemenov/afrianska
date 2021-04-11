@@ -1,0 +1,11 @@
+@import '__link/sending-form__link';
+@import '__text-area/sending-form__text-area';
+@import '__text-area-container/sending-form__text-area-container';
+@import '__input/sending-form__input';
+@import '__label/sending-form__label';
+@import '__input-container/sending-form__input-container';
+@import '__header/sending-form__header';
+.sending-form {
+  font-family: 'Gilroy' ,"Times" , "Serif";
+  color: $sending-form--color;
+}

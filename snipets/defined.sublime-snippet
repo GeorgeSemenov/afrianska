@@ -1,7 +1,7 @@
 <snippet>
   <content><![CDATA[
-if modifier[${1:poperty}] == undefined
-    - modifier[${1:poperty}] = ${2:${1:poperty}};
+if modifier["${1:poperty}"] == undefined
+    - modifier["${1:poperty}"] = ${2:empty__${1:poperty}};
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>def</tabTrigger>

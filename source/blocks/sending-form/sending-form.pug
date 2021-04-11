@@ -1,0 +1,14 @@
+include __text-area/sending-form__text-area.pug
+include __text-area-container/sending-form__text-area-container.pug
+include __input/sending-form__input.pug
+include __label/sending-form__label.pug
+include __input-container/sending-form__input-container.pug
+include __header/sending-form__header.pug
+mixin sending-form(modifier)
+  if modifier == undefined
+      - modifier = {};
+  form.sending-form&attributes(attributes)
+    +sending-form__header(modifier)
+    +sending-form__input-container(modifier['input-name'])
+    +sending-form__input-container(modifier['input-email'])
+    +sending-form__text-area-container(modifier['text-area'])

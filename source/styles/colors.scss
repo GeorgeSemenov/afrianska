@@ -17,6 +17,7 @@ $blue: #356EAD;//rgba(53, 110, 173, 1)
 $blue-dark: #5A98D0;//rgba(90, 152, 208, 1)
 $blue-less-darker: #98C3E8;
 $blue-darker: #316099;//rgba(49, 96, 153, 1)
+$blue-darkest: #1F3F68;
 
 /* variables with sense */
 /* *********************************************************************** */
@@ -78,3 +79,5 @@ $articles-screen__title--color: $blue;
 $articles-screen__pagination-button--color: $blue ;
 $articles-screen__pagination-button-hover--color: $blue-dark ;
 $articles-screen__pagination-button-active--color: $blue-less-darker;
+
+$sending-form--color: $blue-darkest;

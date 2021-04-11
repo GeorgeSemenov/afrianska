@@ -1,0 +1,8 @@
+mixin sending-form__input-container(modifier)
+  .sending-form__input-container&attributes(attributes)
+    if modifier["input-id"] == undefined
+      - modifier["input-id"] = 'input-id';
+    if modifier[type] == undefined
+      - modifier[type] = 'text';
+    //- +sending-form__label(modifier)(for=modifier["input-id"])
+    //- +sending-form__input(modifier)(type=modifier["input-type"] id=modifier["input-id"])

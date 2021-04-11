@@ -29,7 +29,8 @@ const common= merge([//модуль merge -  заменяет метод assign 
 		mode:'',//Специально не корректно инициализируем параметр mode, т.к. его мы будем инициализировать в последнюю очередь см функцию module.exports
 		entry: {
 			'index': PATHS.source + '/pages/index/index.js',//Обрати внимание для кадой страницы мы создаём свою точку входа которая начинается с .js файла
-			'blogpage': PATHS.source + '/pages/blogpage/blogpage.js'
+			'blogpage': PATHS.source + '/pages/blogpage/blogpage.js',
+			'contactus': PATHS.source + '/pages/contactus/contactus.js'
 		},
 		output: {
 			path: PATHS.build,//Устанавливаем путь, куда мы будем пихать наши обработанные файлы
@@ -60,6 +61,11 @@ const common= merge([//модуль merge -  заменяет метод assign 
 				filename:'blogpage.html',//Задаём имя генерируемому файлу
 				chunks: ['blogpage', 'common'],//Добавляет на страницу только те файлы, которые начинаются с index (допустим index.js index.css даже несмотря на то что они находятся в отельных папках css/ и js/)
 				template: PATHS.source + '/pages/blogpage/blogpage.pug',//в данный плагин мы передадим шаблон разметки pug но сразу же скомпилированную (pug-loader'oм), проще говоря плагин сверстает страницу изходя из разметки, которую ему предоставит pug плагин (см он подключени ниже) после обработки этого шаблона
+			}),
+			new HtmlWebpackPlugin({// создаём страничку html, при этом она подключает все файлы, указанные в свойствах объекта output
+				filename:'contactus.html',//Задаём имя генерируемому файлу
+				chunks: ['contactus', 'common'],//Добавляет на страницу только те файлы, которые начинаются с index (допустим index.js index.css даже несмотря на то что они находятся в отельных папках css/ и js/)
+				template: PATHS.source + '/pages/contactus/contactus.pug',//в данный плагин мы передадим шаблон разметки pug но сразу же скомпилированную (pug-loader'oм), проще говоря плагин сверстает страницу изходя из разметки, которую ему предоставит pug плагин (см он подключени ниже) после обработки этого шаблона
 			}),
 			new MiniCssExtractPlugin(), // Видимо без этого мы не сможем использовать loader, который будем использовать в для обработки scss файлов
 			new OptimizeCssAssetsPlugin(),//Для оптимизации css и удаленя дублей стилей (если дважды импортируешь файл)
