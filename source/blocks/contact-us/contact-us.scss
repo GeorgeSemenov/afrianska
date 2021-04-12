@@ -6,4 +6,7 @@
 .contact-us {
   font-family: 'Gilroy' ,"Times" , "Serif";
   color: $contact-us--color;
+  @media (max-width: $xl - 1px){
+    @include px(15px);
+  }
 }

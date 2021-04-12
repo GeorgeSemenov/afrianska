@@ -6,8 +6,10 @@
   display: flex;
   justify-content: space-between;
   padding-top: 57px;
-  @media (max-width: $md - 1px){
+  @media (max-width: $lg - 1px){
     flex-direction: column;
+  }
+  @media (max-width: $md - 1px){
     padding-top: 30px;
   }
 }

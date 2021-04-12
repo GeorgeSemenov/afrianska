@@ -1,8 +1,11 @@
 .contact-us__img {
   margin-left: 11px;
   margin-bottom: 68px;
+  max-width: 100%;
+  @media (max-width: $lg - 1px){
+    margin-left: 0px;
+  }
   @media (max-width: $sm - 1px){
     margin-bottom: 35px;
-
   }
 }

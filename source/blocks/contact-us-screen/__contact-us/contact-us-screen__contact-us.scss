@@ -1,6 +1,14 @@
 .contact-us-screen__contact-us {
   padding-top: 63px;
+  @media (max-width: $lg - 1px){
+    width: 60%;
+    @include mx(auto);
+  }
+  @media (max-width: $md - 1px){
+    width: 100%
+  }
   @media (max-width: $sm - 1px){
     padding-top: 30px;
+    @include mx(0px);
   }
 }
