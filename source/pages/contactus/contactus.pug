@@ -37,19 +37,64 @@ html(lang="ru")
         header:"Contact Us",
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       })
-    +contact-us-screen({
-      'header' : "SEND US MESSAGE",
-      "input-name" :{
-        'input-id' : "customer-name",
-        'input-type': 'text',
-        'placeholder' : 'Your Name',
-        'label' : 'Full Name'
+    +contact-us-screen(
+    {
+      "sending-form" : {
+        'header' : "SEND US MESSAGE",
+        "input-name" :{
+          'input-id' : "customer-name",
+          'input-type': 'text',
+          'placeholder' : 'Your Name',
+          'label' : 'Full Name'
+        },
+        "input-email" : {
+          'input-id' : 'customer-email',
+          'input-type': 'email',
+          'placeholder' : 'Your Email',
+          'label' : 'Email'
+        },
+        "text-area" : {
+          'text-area-id' : 'customer-proposal',
+          'text-area-name' : 'nameTA',
+          'placeholder' : 'Your Message',
+          'label' : 'Message'
+        },
+        "link" : {
+          'text' : "SUBMIT"
+        }
       },
-      "input-email" : {
-        'input-id' : 'customer-email',
-        'input-type': 'email',
-        'placeholder' : 'Your Email',
-        'label' : 'Email'
+      "contact-us" : {
+        "address": {
+          "header": "ADDRESS",
+          "contactsArr": [
+            {
+              "text" : "Id convallis placerat sit sed duis id amet volutpat quam a, pharetra."
+            }
+          ]
+        },
+        "phones": {
+          "header": "PHONE",
+          "contactsArr": [
+            {
+              "text" : "+62-812-7313-4321"
+            },
+            {
+              "text" : "+62-817-000-1234"
+            }
+          ]
+        },
+        "services": {
+          "header": "ONLINE SERVICE",
+          "contactsArr": [
+            {
+              "text" : "www.afrianska.com"
+            },
+            {
+              "text" : "hello.afrian@gmail.com",
+              "modifier" : "contact-us__list-item_service_email"
+            }
+          ]
+        },
       }
     })(class="main-content-frames")
     +footer({})

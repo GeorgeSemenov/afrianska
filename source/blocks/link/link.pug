@@ -1,4 +1,7 @@
 mixin link(modifier)
   if modifier.link == undefined
       - modifier.link = {text:"someValuelinkText"};
-  a.link(href="#!")&attributes(attributes)!=modifier.link.text
+  if ( !(attributes.class.indexOf('link_theme_button')==-1) ) 
+    button.link(type='submit')&attributes(attributes)!=modifier.link.text
+  else
+    a.link(href="#!")&attributes(attributes)!=modifier.link.text

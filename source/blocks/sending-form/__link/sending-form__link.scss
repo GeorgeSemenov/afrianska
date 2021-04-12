@@ -1,1 +1,4 @@
-.sending-form__link {}
+.sending-form__link {
+  width: 100%;
+  @include py(28px);
+}

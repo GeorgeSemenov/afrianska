@@ -1,3 +1,5 @@
+@import '_py_big/link_py_big';
+@import '_theme_button/link_theme_button';
 .link {
   @include px(5px);
   @include py(20px);
@@ -20,5 +22,8 @@
   &:active{
     background-color: darken($link--background-color,30%);
     color: darken($link--color,30%);
+  }
+  &.link_py_big{
+    @include py(28px);
   }
 }

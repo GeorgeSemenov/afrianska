@@ -1,7 +1,5 @@
 mixin sending-form__text-area-container(modifier)
   .sending-form__text-area-container&attributes(attributes)
-    if modifier == undefined
-        - modifier = {};
     if modifier["text-area-id"] == undefined
         - modifier["text-area-id"] = 'text-area-id';
     if modifier["text-area-name"] == undefined

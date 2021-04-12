@@ -1,4 +1,6 @@
 include ../sending-form/sending-form.pug
+include ../contact-us/contact-us.pug
 mixin contact-us-screen(modifier)
   .contact-us-screen&attributes(attributes)
-    +sending-form(modifier)
+    +contact-us(modifier["contact-us"])(class="contact-us-screen__contact-us")
+    +sending-form(modifier["sending-form"])(class="contact-us-screen__sending-form")

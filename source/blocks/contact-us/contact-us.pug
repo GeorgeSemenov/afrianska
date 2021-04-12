@@ -1,0 +1,13 @@
+include __contacts-list-container/contact-us__contacts-list-container.pug
+include __list-item/contact-us__list-item.pug
+include __list-header/contact-us__list-header.pug
+include __contacts-list/contact-us__contacts-list.pug
+include __img/contact-us__img.pug
+mixin contact-us(modifier)
+  .contact-us&attributes(attributes)
+    if modifier == undefined
+        - modifier = {};
+    +contact-us__img(modifier)
+    +contact-us__contacts-list-container(modifier.address)
+    +contact-us__contacts-list-container(modifier.phones)(class="contact-us__contacts-list-container_phones")
+    +contact-us__contacts-list-container(modifier.services)(class="contact-us__contacts-list-container_services")

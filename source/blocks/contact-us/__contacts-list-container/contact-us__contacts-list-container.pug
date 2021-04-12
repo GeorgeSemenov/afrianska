@@ -1,0 +1,14 @@
+mixin contact-us__contacts-list-container(modifier)
+  .contact-us__contacts-list-container&attributes(attributes)
+    if modifier == undefined
+      - modifier = {};
+    - modifier._isPhoneList = false;
+    - modifier._isServicesList = false;
+    if attributes["class"] == undefined
+        - attributes["class"] = "";
+    if ( !(attributes.class.indexOf('contact-us__contacts-list-container_phones')==-1) ) 
+      - modifier._isPhoneList = true; 
+    if ( !(attributes.class.indexOf('contact-us__contacts-list-container_services')==-1) ) 
+      - modifier._isServicesList = true;
+    +contact-us__list-header(modifier)
+    +contact-us__contacts-list(modifier)

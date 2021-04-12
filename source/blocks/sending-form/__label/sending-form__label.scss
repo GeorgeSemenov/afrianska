@@ -3,4 +3,8 @@
   line-height: 30px;
   letter-spacing: 0.04em;
   opacity: 0.8;
+  margin-bottom: 9px;
+  @media (max-width: $sm - 1px){
+    margin-bottom: 5px;
+  }
 }

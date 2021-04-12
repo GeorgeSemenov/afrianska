@@ -1,3 +1,13 @@
+@import '__contact-us/contact-us-screen__contact-us';
 @import '../sending-form/sending-form';
+@import '../contact-us/contact-us';
 @import '__sending-form/contact-us-screen__sending-form';
-.contact-us-screen {}
+.contact-us-screen {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 57px;
+  @media (max-width: $md - 1px){
+    flex-direction: column;
+    padding-top: 30px;
+  }
+}

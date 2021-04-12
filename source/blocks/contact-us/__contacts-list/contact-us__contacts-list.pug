@@ -1,0 +1,12 @@
+mixin contact-us__contacts-list(modifier)
+  ul.contact-us__contacts-list&attributes(attributes)
+    if modifier["contactsArr"] == undefined
+      - modifier["contactsArr"] = [{text: "empty__contact"}];
+    each item in modifier.contactsArr
+      if item["modifier"] == undefined
+        - item["modifier"] = "";
+      if modifier._isPhoneList
+        - item["modifier"] = item["modifier"] + " contact-us__list-item_phone ";
+      if modifier._isServicesList
+        - item["modifier"] = item["modifier"] + " contact-us__list-item_service ";
+      +contact-us__list-item(item.text)(class=item.modifier)

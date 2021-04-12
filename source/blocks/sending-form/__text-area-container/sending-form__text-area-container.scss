@@ -1,1 +1,9 @@
-.sending-form__text-area-container {}
+.sending-form__text-area-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 73px;
+  @media (max-width: $sm - 1px){
+    margin-bottom: 40px;
+
+  }
+}

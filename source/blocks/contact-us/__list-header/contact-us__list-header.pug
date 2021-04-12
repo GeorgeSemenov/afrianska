@@ -1,0 +1,4 @@
+mixin contact-us__list-header(modifier)
+  if modifier["header"] == undefined
+    - modifier["header"] = "empty__header";
+  h2.contact-us__list-header&attributes(attributes)!=modifier.header

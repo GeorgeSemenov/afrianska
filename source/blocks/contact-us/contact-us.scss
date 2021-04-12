@@ -1,0 +1,9 @@
+@import '__contacts-list-container/contact-us__contacts-list-container';
+@import '__list-item/contact-us__list-item';
+@import '__list-header/contact-us__list-header';
+@import '__contacts-list/contact-us__contacts-list';
+@import '__img/contact-us__img';
+.contact-us {
+  font-family: 'Gilroy' ,"Times" , "Serif";
+  color: $contact-us--color;
+}

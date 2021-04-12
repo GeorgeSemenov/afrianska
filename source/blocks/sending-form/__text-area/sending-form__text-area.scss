@@ -1,1 +1,20 @@
-.sending-form__text-area {}
+.sending-form__text-area {
+  opacity: 0.4;
+  border: 1px solid $sending-form__textarea--border-color;
+  box-sizing: border-box;
+  border-radius: 10px;
+  @include py(18px);
+  @include px(33px);
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    opacity: 0.2;
+  }
+  @media (max-width: $sm - 1px){
+    @include py(10px);
+    @include px(15px);
+
+  }
+}

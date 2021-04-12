@@ -1,10 +1,9 @@
 <snippet>
   <content><![CDATA[
-if modifier["${1:poperty}"] == undefined
-  - modifier["${1:poperty}"] = ${2:empty__${1:poperty}};
+span!=JSON.stringify(modifier${1:["${2:}"]})
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>def</tabTrigger>
+  <tabTrigger>spa</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <!-- <scope>source.python</scope> -->
 </snippet>
