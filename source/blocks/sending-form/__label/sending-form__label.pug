@@ -1,2 +1,4 @@
 mixin sending-form__label(modifier)
-  label.sending-form__label&attributes(attributes)
+  if modifier["label"] == undefined
+      - modifier["label"] = 'empty__label';
+  label.sending-form__label&attributes(attributes)!=modifier['label']

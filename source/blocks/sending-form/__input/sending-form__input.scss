@@ -1,1 +1,6 @@
-.sending-form__input {}
+.sending-form__input {
+  opacity: 0.4;
+  border: 1px solid $sending-form__input--border-color;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
