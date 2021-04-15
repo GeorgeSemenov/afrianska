@@ -1,3 +1,4 @@
 mixin footer__contact(modifier)
-  li.footer__contact&attributes(attributes)
-    +footer__cText(modifier)
+  if modifier.text == undefined
+    - modifier.text =  "empty text field";
+  li.footer__contact&attributes(attributes)!=modifier.text

@@ -21,7 +21,8 @@ $(document).ready(function(){
       pagination: {
         el: '.cards-screen__pagination',
         clickable: true,
-        bulletElement: 'button'
+        bulletElement: 'button',
+
       },
       autoplay: {
         delay: 3500,
