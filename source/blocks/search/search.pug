@@ -1,7 +1,7 @@
 include __input/search__input.pug
-include __magnifying-glass/search__magnifying-glass.pug
-include ../../img/svg/magnifying_glass.pug
+include __magnifying-glass-container/search__magnifying-glass-container.pug
+include ../../img/svg/magnifying-glass.pug
 mixin search(modifier)
   form.search&attributes(attributes)
     +search__input(modifier)
-    +search__magnifying-glass(modifier)
+    +search__magnifying-glass-container(modifier)

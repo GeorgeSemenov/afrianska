@@ -24,6 +24,6 @@ $card-width: 380px;//От этого показателя будет завис�
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-rows: 1fr 1fr 0.1fr;
+    grid-template-rows: 1fr 0.1fr 0.1fr;
   }
 }
