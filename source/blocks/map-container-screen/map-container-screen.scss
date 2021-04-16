@@ -1,0 +1,7 @@
+@import '__map/map-container-screen__map';
+@import '_add_mb/map-container-screen_add_mb';
+.map-container-screen {
+  &.map-container-screen_add_mb {
+    margin-bottom: 94px;
+  }
+}

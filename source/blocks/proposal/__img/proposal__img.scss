@@ -1,9 +1,18 @@
 .proposal__img {
-
+  display: block;
+  @include mx(auto);
 }
 
 .proposal_theme_big-image{
   .proposal__img {
     width: 100%;
+  }
+}
+
+.proposal_theme_article{
+  .proposal__img{
+    @media (max-width: $sm - 1px){
+      @include square(100%);
+    }
   }
 }

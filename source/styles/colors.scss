@@ -26,7 +26,8 @@ $article_font-blue-light--color: $blue-light;
 $article_theme_screen-header--color: $blue-light;
 $article_theme_light--color: $white;
 
-$header--BGColor: $white;
+$header--BGColor: $transparent;
+$header_theme_white--BGColor: $white;
 $header__sandwich-ico--BGColor: $blue;
 $header__sandwich-ico-after-before--BGColor: $header__sandwich-ico--BGColor;
 $header__item--color: $blue-darker;
@@ -72,7 +73,7 @@ $proposal__dates--color: $gray-dark-fader;
 
 $popular-screen__title--color: $blue;
 $popular-screen__see-all-link--color: $popular-screen__title--color;
-$popular-screen__bottom-block-line--BG: $gray-dark-fadest;
+$popular-screen-after--BG: $gray-dark-fadest;
 //$popular-screen--border-bottom-color: $gray-dark-fadest;
 
 $articles-screen__title--color: $blue;

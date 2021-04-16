@@ -1,5 +1,4 @@
 include ../../blocks/header/header.pug
-include ../../blocks/zaglushambo/zaglushambo.pug
 include ../../blocks/page-title/page-title.pug
 include ../../blocks/popular-screen/popular-screen.pug
 include ../../blocks/articles-screen/articles-screen.pug
@@ -30,9 +29,21 @@ html(lang="ru")
     meta(name='theme-color' content='#ffffff')
   body
     +header({
-      navigationAr: ['home', 'blog', 'contact us']
+      navigationAr: [
+        {
+          content: 'home',
+          link: '/'
+        }, 
+        {
+          content: 'blog',
+          link: '/blogpage.html'
+        }, 
+        {
+          content: 'contact us',
+          link: '/contactus.html'
+        }
+      ]
     })
-    +zaglushambo({})
     main
       +page-title({
         header:"Blog Afrianska",

@@ -1,1 +1,6 @@
-.our-clients-screen__client-logo {}
+.our-clients-screen__client-logo {
+  @media (max-width: $sm - 1px){
+    width: 115px;
+    height: 63px;
+  }
+}

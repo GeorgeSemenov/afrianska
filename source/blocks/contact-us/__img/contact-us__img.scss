@@ -3,7 +3,8 @@
   margin-bottom: 68px;
   max-width: 100%;
   @media (max-width: $lg - 1px){
-    margin-left: 0px;
+    @include mx(auto);
+    display: block;
   }
   @media (max-width: $sm - 1px){
     margin-bottom: 35px;

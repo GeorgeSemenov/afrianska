@@ -1,4 +1,6 @@
 .footer__link {
-  flex-basis: 220px;
+  min-width: 220px;
   @include mx(auto);
+  height: 100%;
+  align-self: center;
 }

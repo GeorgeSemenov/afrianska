@@ -1,3 +1,4 @@
+@import '_add_mb/contact-us-screen_add_mb';
 @import '__contact-us/contact-us-screen__contact-us';
 @import '../sending-form/sending-form';
 @import '../contact-us/contact-us';
@@ -11,5 +12,12 @@
   }
   @media (max-width: $md - 1px){
     padding-top: 30px;
+  }
+
+  &.contact-us-screen_add_mb {
+    margin-bottom: 95px;
+    @media (max-width: $md - 1px){
+      margin-bottom: 40px;
+    }
   }
 }

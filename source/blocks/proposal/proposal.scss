@@ -17,9 +17,6 @@
 @import '_theme_big-image/proposal_theme_big-image';
 .proposal {
   max-width: 300px;
-  @media (max-width: $sm - 1px){
-  }
-
   &.proposal_theme_big-image{
     max-width: 100%;
     display: flex;

@@ -3,10 +3,6 @@
   @media (max-width: $lg - 1px){
     margin-bottom: 15px;
   }
-  img{
-    max-width: 100%;
-    @include mx(auto);
-  }
 }
 .proposal_theme_big-image {
   .proposal__img-wrapper{

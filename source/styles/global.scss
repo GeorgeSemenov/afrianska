@@ -1,5 +1,19 @@
-html{font-size: 10px;}
-body{margin:0;}
+html{
+  font-size: 10px;
+  @media (max-width: $lg - 1px){
+    font-size: 9px;
+  }
+  @media (max-width: $md - 1px){
+    font-size: 8px;
+  }
+}
+body{
+  margin:0;
+  padding-top: 128px;
+}
+._no-padding{
+  padding: 0;
+}
 .main-content-frames{
   @include mx(auto);
   max-width: 940px;

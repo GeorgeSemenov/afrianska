@@ -1,7 +1,7 @@
 include ../../blocks/header/header.pug
-include ../../blocks/zaglushambo/zaglushambo.pug
 include ../../blocks/page-title/page-title.pug
 include ../../blocks/contact-us-screen/contact-us-screen.pug
+include ../../blocks/map-container-screen/map-container-screen.pug
 include ../../blocks/footer/footer.pug
 doctype html
 html(lang="ru")
@@ -29,72 +29,85 @@ html(lang="ru")
     meta(name='theme-color' content='#ffffff')
   body
     +header({
-      navigationAr: ['home', 'blog', 'contact us']
+      navigationAr: [
+        {
+          content: 'home',
+          link: '/'
+        }, 
+        {
+          content: 'blog',
+          link: '/blogpage.html'
+        }, 
+        {
+          content: 'contact us',
+          link: '/contactus.html'
+        }
+      ]
     })
-    +zaglushambo({})
     main
       +page-title({
         header:"Contact Us",
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       })
-    +contact-us-screen(
-    {
-      "sending-form" : {
-        'header' : "SEND US MESSAGE",
-        "input-name" :{
-          'input-id' : "customer-name",
-          'input-type': 'text',
-          'placeholder' : 'Your Name',
-          'label' : 'Full Name'
+      +contact-us-screen(
+      {
+        "sending-form" : {
+          'header' : "SEND US MESSAGE",
+          "input-name" :{
+            'input-id' : "customer-name",
+            'input-type': 'text',
+            'placeholder' : 'Your Name',
+            'label' : 'Full Name'
+          },
+          "input-email" : {
+            'input-id' : 'customer-email',
+            'input-type': 'email',
+            'placeholder' : 'Your Email',
+            'label' : 'Email'
+          },
+          "text-area" : {
+            'text-area-id' : 'customer-proposal',
+            'text-area-name' : 'nameTA',
+            'placeholder' : 'Your Message',
+            'label' : 'Message'
+          },
+          "link" : {
+            'text' : "SUBMIT"
+          }
         },
-        "input-email" : {
-          'input-id' : 'customer-email',
-          'input-type': 'email',
-          'placeholder' : 'Your Email',
-          'label' : 'Email'
-        },
-        "text-area" : {
-          'text-area-id' : 'customer-proposal',
-          'text-area-name' : 'nameTA',
-          'placeholder' : 'Your Message',
-          'label' : 'Message'
-        },
-        "link" : {
-          'text' : "SUBMIT"
+        "contact-us" : {
+          "address": {
+            "header": "ADDRESS",
+            "contactsArr": [
+              {
+                "text" : "Id convallis placerat sit sed duis id amet volutpat quam a, pharetra."
+              }
+            ]
+          },
+          "phones": {
+            "header": "PHONE",
+            "contactsArr": [
+              {
+                "text" : "+62-812-7313-4321"
+              },
+              {
+                "text" : "+62-817-000-1234"
+              }
+            ]
+          },
+          "services": {
+            "header": "ONLINE SERVICE",
+            "contactsArr": [
+              {
+                "text" : "www.afrianska.com"
+              },
+              {
+                "text" : "hello.afrian@gmail.com",
+                "modifier" : "contact-us__list-item_service_email"
+              }
+            ]
+          },
         }
-      },
-      "contact-us" : {
-        "address": {
-          "header": "ADDRESS",
-          "contactsArr": [
-            {
-              "text" : "Id convallis placerat sit sed duis id amet volutpat quam a, pharetra."
-            }
-          ]
-        },
-        "phones": {
-          "header": "PHONE",
-          "contactsArr": [
-            {
-              "text" : "+62-812-7313-4321"
-            },
-            {
-              "text" : "+62-817-000-1234"
-            }
-          ]
-        },
-        "services": {
-          "header": "ONLINE SERVICE",
-          "contactsArr": [
-            {
-              "text" : "www.afrianska.com"
-            },
-            {
-              "text" : "hello.afrian@gmail.com",
-              "modifier" : "contact-us__list-item_service_email"
-            }
-          ]
-        },
-      }
-    })(class="main-content-frames")
+      })(class="main-content-frames contact-us-screen_add_mb")
+      +map-container-screen({})(class="main-content-frames map-container-screen_add_mb")
     +footer({})

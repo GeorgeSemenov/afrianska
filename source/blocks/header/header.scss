@@ -1,3 +1,4 @@
+@import '_theme_white/header_theme_white';
 @import '__item-content/header__item-content';
 @import '_theme_small/header_theme_small';
 @import '_expanded/header_expanded';
@@ -31,5 +32,8 @@
 
   &.header_theme_small{
     @include py(15px);
+  }
+  &.header_theme_white{
+    background-color: $header_theme_white--BGColor;
   }
 }

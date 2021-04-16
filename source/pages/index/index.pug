@@ -28,9 +28,22 @@ html(lang="ru")
     meta(name='msapplication-TileColor' content='#ffffff')
     meta(name='msapplication-TileImage' content='/ms-icon-144x144.png')
     meta(name='theme-color' content='#ffffff')
-  body
+  body._no-padding
     +header({
-      navigationAr: ['home', 'blog', 'contact us']
+      navigationAr: [
+        {
+          content: 'home',
+          link: '/'
+        }, 
+        {
+          content: 'blog',
+          link: '/blogpage.html'
+        }, 
+        {
+          content: 'contact us',
+          link: '/contactus.html'
+        }
+      ]
     })
     main
       +main-screen({

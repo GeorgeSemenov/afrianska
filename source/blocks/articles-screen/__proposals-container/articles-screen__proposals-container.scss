@@ -1,3 +1,6 @@
 .articles-screen__proposals-container {
-  margin-bottom: 23px;
+  margin-bottom: 42px;
+  @media (max-width: $sm - 1px){
+    margin-bottom: 30px;
+  }
 }

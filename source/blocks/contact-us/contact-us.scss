@@ -7,6 +7,7 @@
   font-family: 'Gilroy' ,"Times" , "Serif";
   color: $contact-us--color;
   @media (max-width: $xl - 1px){
+    box-sizing: border-box;
     @include px(15px);
   }
 }
