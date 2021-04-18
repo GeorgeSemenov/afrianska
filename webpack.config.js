@@ -4,7 +4,7 @@
 	path.resolve(__dirname,'dist') - возвращает строку, которая ведёт напрямую в текущую папку и добавляет под конец папку dist
 
 */
-//const {CleanWebpackPlugin} = require('clean-webpack-plugin'); // этот плагин нужно подключать, если нужно почистить папки, допустим от старых версий файлов, в именах которых присутствует хэш, обрати внимание что этот плагин подключается иначе, надо из самого файла как буд-то взять класс cleanWebpackPlugin почитай import в JS станет понятнее npm install -D clean-webpack-plugin
+const {CleanWebpackPlugin} = require('clean-webpack-plugin'); // этот плагин нужно подключать, если нужно почистить папки, допустим от старых версий файлов, в именах которых присутствует хэш, обрати внимание что этот плагин подключается иначе, надо из самого файла как буд-то взять класс cleanWebpackPlugin почитай import в JS станет понятнее npm install -D clean-webpack-plugin
 const webpack = require('webpack');//Это нужно что бы появилась возможность выделить код webpack из кода js файлов (index.js и blog.js), для этого мы будем использовать метод optimize
 const HtmlWebpackPlugin = require('html-webpack-plugin');//Данный плагин позволяет взаимодействовать с html
 const merge = require('webpack-merge');//Этот модуль нужен чтобы в webpack.config.js склеивать различные модули, вместо object.assign - теперь кажыдй модуль можно записать в другой файл (как pug.js) и подключить к webpack.config.js
@@ -94,6 +94,11 @@ module.exports = function(env){/*webpackу требуется экспортир
 	if (env === 'production'){// env - параметр который передаётся в npm scripts - загляни в package.jsone
 		common.devtool = false;//сорсмап создаваться не будет
 		return merge([
+			{
+				plugins:[
+					new CleanWebpackPlugin(),//объект данного класса чистит папки и оставляет только актуальные файлы, допустим у тебя есть двай файла hash1.bundle.js hash2.bundle.js очевидно, что тот файл что выпустился позже и должен использоваться поэтому cleanWebpackPlugin удаляет файлы более старые. лучше вставлять этот плагин вначале всех остальных, если поставишь в конце, то он удалит всё что сделали предыдущие плагины.
+				]
+			},
 			common,
 			extractCss(),//Отделяем файлы стилей в продакшене, хотя ничто не мешает это делать в common(т.е. всегда), напоминаю этот модуль заменяет собой style-loader, т.е. теперь стили не будут писаться инлайно в html файле, а будут вынесены в отдельный файлик.
 		])
