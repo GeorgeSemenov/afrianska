@@ -6,17 +6,24 @@
   position: relative;
   transform: translateX(100%);
   opacity: 0;
-  background-color: $header__navigation_expanded--BGColor;
+  background-color: $header_expanded__navigation--BGColor;
   @media (max-width: $md - 1px){
     position: absolute;
     transform: translateY(-100%);
-    top: 48px;
+    top: 64px;
     left: 0;
     text-align: center;
     flex-direction: column;
     width: 100vw;
     padding-bottom: 10px;
     border-radius: 0 0 10px 10px;
+
+  }
+}
+
+.header_theme_white{
+  .header__navigation{
+    background-color: $header_expanded_theme_white__navigation--BGColor;
   }
 }
 

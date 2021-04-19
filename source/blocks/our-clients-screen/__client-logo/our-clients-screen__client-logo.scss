@@ -1,6 +1,11 @@
 .our-clients-screen__client-logo {
   @media (max-width: $sm - 1px){
+    display: block;
     width: 115px;
     height: 63px;
+  }
+  img{
+    max-height: 100%;
+    max-width: 100%;
   }
 }
