@@ -1,4 +1,8 @@
 mixin footer__contact(modifier)
   if modifier.text == undefined
     - modifier.text =  "empty text field";
-  li.footer__contact&attributes(attributes)!=modifier.text
+  if modifier.href == undefined
+    li.footer__contact&attributes(attributes)!=modifier.text
+  else 
+    li.footer__contact&attributes(attributes)
+      a(href=modifier.href)!=modifier.text

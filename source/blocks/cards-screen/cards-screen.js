@@ -1,10 +1,10 @@
-import Swiper from '../../../node_modules/swiper/swiper-bundle.js';
-$(document).ready(function(){
-
-  var breakpoint= window.matchMedia('(min-width:991px)');
+// import Swiper from "../../../node_modules/swiper/swiper-bundle.js";
+import Swiper from "swiper";
+$(document).ready(function () {
+  var breakpoint = window.matchMedia("(min-width:991px)");
   var swiper; // объявляю переменную, чтобы она была видна во всех функциях
 
-  var breakpointChecker = function(){
+  var breakpointChecker = function () {
     if (breakpoint.matches === true) {
       if (swiper !== undefined) {
         return swiper.destroy();
@@ -15,27 +15,26 @@ $(document).ready(function(){
   };
 
   var enableSwiper = function () {
-      swiper = new Swiper('.cards-screen', {
+    swiper = new Swiper(".cards-screen", {
       slidesPerView: 1,
       spaceBetween: 15,
       pagination: {
-        el: '.cards-screen__pagination',
+        el: ".cards-screen__pagination",
         clickable: true,
-        bulletElement: 'button',
-
+        bulletElement: "button",
       },
       autoplay: {
         delay: 3500,
         disableOnInteraction: false,
       },
-      breakpoints:{
-        767:{
+      breakpoints: {
+        767: {
           slidesPerView: 2,
           spaceBetween: 15,
         },
-      }
+      },
     });
   };
   breakpoint.addListener(breakpointChecker);
   breakpointChecker();
-})
+});

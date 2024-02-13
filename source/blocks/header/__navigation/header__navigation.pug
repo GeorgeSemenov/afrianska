@@ -1,6 +1,6 @@
 mixin header__navigation(modifier)
   ul.header__navigation&attributes(attributes)
     if modifier.navigationAr == undefined
-        - modifier.navigationAr = {content:"navigationAr is empty", link:""};
+        - modifier.navigationAr = [{content: 'home',link: '/'}, {content: 'blog',link: '/blogpage.html'}, {content: 'contact us',link: '/contactus.html'}];
     each item in modifier.navigationAr
       +header__item(item)

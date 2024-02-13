@@ -14,22 +14,7 @@ html(lang="ru")
     //-В папке build будет лежать файл фавикона, строка которая находится ниже позволит подцепить этот файл
     +favicon()
   body._no-padding
-    +header({
-        navigationAr: [
-        {
-          content: 'home',
-          link: '/afrianska'
-        }, 
-        {
-          content: 'blog',
-          link: '/afrianska/blogpage.html'
-        }, 
-        {
-          content: 'contact us',
-          link: '/afrianska/contactus.html'
-        }
-      ]
-    })
+    +header({})
     main
       +main-screen({
         article:{

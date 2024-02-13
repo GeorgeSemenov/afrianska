@@ -1,6 +1,6 @@
 mixin footer__contacts(modifier)
   ul.footer__contacts&attributes(attributes)
     if modifier.contactsArr == undefined
-        - modifier.contactsArr = [{letter: 'A', text:'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'}, {letter: 'T', text:'+62-812-7313-4321'}, {letter: 'E', text:'hello.afrian@gmail.com'}];
+        - modifier.contactsArr = [{letter: 'A', text:'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'}, {letter: 'T', text:'+62-812-7313-4321',href: "tel:+6281273134321"}, {letter: 'E', text:'hello.afrian@gmail.com',href: "mailto:hello.afrian@gmail.com"}];
     each contact in modifier.contactsArr
       +footer__contact(contact)
